@@ -12,6 +12,7 @@ import {
   IconArrowNarrowLeft,
   IconArrowNarrowRight,
   IconX,
+  IconBrandGithub,
 } from "@tabler/icons-react"
 import { cn } from "@/lib/utils"
 import { AnimatePresence, motion } from "motion/react"
@@ -29,6 +30,7 @@ type Card = {
   category: string
   content?: React.ReactNode
   techStack?: string[]
+  link?: string
 }
 
 export const CarouselContext = createContext<{
@@ -191,6 +193,11 @@ export const Card = ({
   useOutsideClick(containerRef as any, () => handleClose())
 
   const handleOpen = () => {
+    // If there's a GitHub link, open it in a new tab
+    if (card.link) {
+      window.open(card.link, '_blank', 'noopener,noreferrer')
+    }
+    // Otherwise, could open modal (currently disabled)
     // setOpen(true)
   }
 
@@ -267,6 +274,14 @@ export const Card = ({
             {card.title}
           </motion.p>
         </div>
+        {/* GitHub Link Indicator */}
+        {card.link && (
+          <div className="absolute z-40 top-3 right-3 md:top-8 md:right-8">
+            <div className="bg-white/20 backdrop-blur-sm rounded-full p-2 md:p-3 border border-white/30 hover:bg-white/30 transition-all duration-300">
+              <IconBrandGithub className="w-4 h-4 md:w-6 md:h-6 text-white" />
+            </div>
+          </div>
+        )}
         {techStack?.length && (
           <AnimatePresence>
             <div className="absolute z-40 bottom-0 left-0 p-3 md:p-8 flex flex-wrap gap-1">
