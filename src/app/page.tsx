@@ -1,25 +1,33 @@
 import { FullScreen } from "@/components/full-screen"
-import { MyInformation } from "@/containers/about-me"
-
 import { MyUniverse } from "@/containers/my-universe"
-import { PersonalInterests } from "@/containers/personal-interests"
+import { KeyAchievements } from "@/containers/what-i-do"
+import { FeaturedProjects } from "@/containers/featured-projects"
+import { WorkTimeline } from "@/containers/work-timeline"
+import { TechStackSection } from "@/containers/tech-stack-section"
+import { CertificationsHighlight } from "@/containers/certifications-highlight"
 
 export default function Home() {
   return (
     <div>
+      {/* Hero Section */}
       <FullScreen className="w-full xl:w-[85%] mx-auto">
         <MyUniverse />
       </FullScreen>
 
-      <FullScreen className="w-full xl:w-[85%] mx-auto flex flex-col gap-6">
-        <MyInformation />
-      </FullScreen>
+      {/* Key Achievements Section */}
+      <KeyAchievements />
 
-      <div className="my-10">
-        <PersonalInterests />
-      </div>
+      {/* Featured Projects Section */}
+      <FeaturedProjects />
 
-      {/* <Resume /> */}
+      {/* Work Experience Timeline */}
+      <WorkTimeline />
+
+      {/* Tech Stack Section */}
+      <TechStackSection />
+
+      {/* Certifications Highlight */}
+      <CertificationsHighlight />
     </div>
   )
 }

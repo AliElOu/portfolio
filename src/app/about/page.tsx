@@ -2,43 +2,43 @@ import { Metadata } from "next"
 import { ComingSoonPage } from "@/components/layout/coming-soon"
 
 export const metadata: Metadata = {
-  title: "About | Kinh Dev",
+  title: "À propos | Ali El Ouankrimi",
   description:
-    "Learn more about Kinh Dev - Frontend Developer, JavaScript enthusiast, and tech explorer.",
+    "Découvrez Ali El Ouankrimi - Data Scientist, AI Engineer, passionné par le Machine Learning et l'intelligence artificielle.",
   keywords: [
-    "Kinh Dev",
-    "About Kinh",
-    "Frontend Developer",
-    "JavaScript",
-    "Next.js",
-    "Vietnam Developer",
+    "Ali El Ouankrimi",
+    "About Ali",
+    "Data Scientist",
+    "AI Engineer",
+    "Machine Learning",
+    "Big Data",
   ],
   openGraph: {
-    title: "About | Kinh Dev",
+    title: "À propos | Ali El Ouankrimi",
     description:
-      "Discover the story and journey of Kinh Dev in the world of web development.",
-    url: "https://kinhdev.id.vn/about",
-    siteName: "Kinh Dev",
+      "Découvrez le parcours d'Ali El Ouankrimi dans le monde de la Data Science et de l'IA.",
+    url: "https://alielouankrimi.com/about",
+    siteName: "Ali El Ouankrimi",
     type: "website",
-    locale: "en_US",
+    locale: "fr_FR",
     images: [
       // {
-      //   url: "https://kinhdev.id.vn/images/seo/about-og-image.png",
+      //   url: "https://alielouankrimi.com/images/seo/about-og-image.png",
       //   width: 1200,
       //   height: 630,
-      //   alt: "Kinh Dev About Page",
+      //   alt: "Ali El Ouankrimi About Page",
       // },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "About | Kinh Dev",
+    title: "À propos | Ali El Ouankrimi",
     description:
-      "Learn more about Kinh Dev - Frontend Developer and tech enthusiast.",
-    // images: ["https://kinhdev.id.vn/images/seo/about-og-image.png"],
+      "Découvrez Ali El Ouankrimi - Data Scientist et AI Engineer.",
+    // images: ["https://alielouankrimi.com/images/seo/about-og-image.png"],
   },
   alternates: {
-    canonical: "https://kinhdev.id.vn/about",
+    canonical: "https://alielouankrimi.com/about",
   },
 }
 

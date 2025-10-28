@@ -33,13 +33,16 @@ const links = [
     href: "/experience",
   },
   {
-    title: "Projects",
-    href: "/projects",
+    title: "Formation",
+    href: "/education",
   },
   {
-    title: "About",
-    href: "/about",
-    isComingSoon: true,
+    title: "Certificats",
+    href: "/certificates",
+  },
+  {
+    title: "Projects",
+    href: "/projects",
   },
   // {
   //   title: "Sponsors",
@@ -114,16 +117,8 @@ export const Header = () => {
             ))}
           </div>
           <div className="flex items-center gap-2">
-            <iframe
-              className="hidden sm:block"
-              src="https://github.com/sponsors/kinhdev24/button"
-              title="Sponsor kinhdev24"
-              height="32"
-              width="114"
-              style={{ border: "0", borderRadius: "6px" }}
-            ></iframe>
             <a
-              href={"https://github.com/kinhdev24/kinhdev24-portfolio"}
+              href={"https://github.com/AliElOu"}
               target="_blank"
               rel="noopener noreferrer"
               className="border p-2 rounded-2xl hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors duration-300"
@@ -147,7 +142,7 @@ export const Header = () => {
                 <DrawerHeader className="flex justify-between">
                   <DrawerTitle className="flex items-center gap-2">
                     <Logo className="size-14" />
-                    kinhdev.id.vn
+                    alielouankrimi.com
                   </DrawerTitle>
                   <DrawerClose
                     asChild
@@ -173,21 +168,9 @@ export const Header = () => {
                       onClick={() => setIsDrawerOpen(false)}
                     >
                       {link.title}
-                      {link.isComingSoon && (
-                        <span className="text-sm bg-blue-300/10 text-blue-500 px-2 py-1 rounded-full">
-                          Coming Soon
-                        </span>
-                      )}
                     </Link>
                   ))}
                   <Separator />
-                  <iframe
-                    src="https://github.com/sponsors/kinhdev24/button"
-                    title="Sponsor kinhdev24"
-                    height="32"
-                    width="114"
-                    style={{ border: "0", borderRadius: "6px" }}
-                  ></iframe>
                 </div>
               </DrawerContent>
             </Drawer>

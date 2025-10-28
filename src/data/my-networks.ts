@@ -1,35 +1,29 @@
 import {
-  IconBrandFacebook,
   IconBrandGithub,
-  IconBrandInstagram,
   IconBrandLinkedin,
+  IconBrandTwitter,
   IconMail,
 } from "@tabler/icons-react"
 
 export const MY_NETWORKS = [
   {
-    name: "Github",
-    icon: IconBrandGithub,
-    href: "https://github.com/kinhdev24/kinhdev24-portfolio",
-  },
-  {
-    name: "Linkedin",
-    icon: IconBrandLinkedin,
-    href: "https://www.linkedin.com/in/kinhdev24/",
-  },
-  {
     name: "Email",
     icon: IconMail,
-    href: "mailto:kinhdev24@gmail.com",
+    href: "mailto:alielouankrimi@gmail.com",
   },
   {
-    name: "Facebook",
-    icon: IconBrandFacebook,
-    href: "https://www.facebook.com/kinhdev24/",
+    name: "Twitter",
+    icon: IconBrandTwitter,
+    href: "https://twitter.com/AliElOu",
   },
   {
-    name: "Instagram",
-    icon: IconBrandInstagram,
-    href: "https://www.instagram.com/kinhdev24/",
+    name: "LinkedIn",
+    icon: IconBrandLinkedin,
+    href: "https://www.linkedin.com/in/alielouankrimi/",
+  },
+  {
+    name: "GitHub",
+    icon: IconBrandGithub,
+    href: "https://github.com/AliElOu",
   },
 ]

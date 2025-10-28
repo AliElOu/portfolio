@@ -2,33 +2,33 @@ import { FullScreen } from "@/components/full-screen"
 import { ExperienceTimeline } from "./containers/experience-timeline"
 
 export const metadata = {
-  title: "Experience | Kinh Dev",
+  title: "Expérience | Ali El Ouankrimi",
   description:
-    "Explore the professional journey of Kinh Dev - frontend developer with experience in modern JavaScript frameworks.",
+    "Explorez le parcours professionnel d'Ali El Ouankrimi - Data Scientist avec expérience en Machine Learning, Deep Learning et Big Data.",
   openGraph: {
-    title: "Experience | Kinh Dev",
+    title: "Expérience | Ali El Ouankrimi",
     description:
-      "Frontend Developer with hands-on experience in React, Next.js, and modern UI/UX design.",
-    url: "https://kinhdev.id.vn/experience",
-    siteName: "Kinh Dev",
+      "Data Scientist avec une expérience pratique en Python, TensorFlow, et analyse de données.",
+    url: "https://alielouankrimi.com/experience",
+    siteName: "Ali El Ouankrimi",
     images: [
       // {
-      //   url: "https://kinhdev.id.vn/images/seo/experience-og-image.png",
+      //   url: "https://alielouankrimi.com/images/seo/experience-og-image.png",
       //   width: 1200,
       //   height: 630,
-      //   alt: "Kinh Dev Experience Page",
+      //   alt: "Ali El Ouankrimi Experience Page",
       // },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Experience | Kinh Dev",
+    title: "Expérience | Ali El Ouankrimi",
     description:
-      "Check out Kinh Dev's past work and achievements in frontend development.",
-    //   images: ["https://kinhdev.id.vn/images/seo/experience-og-image.png"],
+      "Découvrez les expériences professionnelles d'Ali El Ouankrimi en Data Science et IA.",
+    //   images: ["https://alielouankrimi.com/images/seo/experience-og-image.png"],
   },
   alternates: {
-    canonical: "https://kinhdev.id.vn/experience",
+    canonical: "https://alielouankrimi.com/experience",
   },
 }
 

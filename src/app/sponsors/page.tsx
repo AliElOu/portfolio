@@ -3,25 +3,19 @@ import { HoverBorderGradient } from "@/components/ui/hover-border-gradient"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Sponsors | Kinh Dev",
-  description: "Sponsors of Kinh Dev",
+  title: "Sponsors | Ali El Ouankrimi",
+  description: "Sponsors d'Ali El Ouankrimi",
 }
 
 export default function Page() {
   return (
     <FullScreen>
-      <HoverBorderGradient
-        containerClassName="rounded-[10px]"
-        as="button"
-        className="dark:bg-[#0d1117] bg-white text-black dark:text-white flex items-center space-x-2 cursor-pointer w-full"
-      >
-        <iframe
-          src="https://github.com/sponsors/kinhdev24/card"
-          title="Sponsor kinhdev24"
-          className="w-full h-full"
-          style={{ border: "0" }}
-        ></iframe>
-      </HoverBorderGradient>
+      <div className="text-center">
+        <h1 className="text-4xl font-bold mb-4">Sponsors</h1>
+        <p className="text-muted-foreground">
+          Cette page est en cours de développement.
+        </p>
+      </div>
     </FullScreen>
   )
 }

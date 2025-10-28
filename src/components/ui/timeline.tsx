@@ -8,7 +8,17 @@ interface TimelineEntry {
   content: React.ReactNode
 }
 
-export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
+interface TimelineProps {
+  data: TimelineEntry[]
+  headerTitle?: string
+  headerDescription?: string
+}
+
+export const Timeline = ({ 
+  data, 
+  headerTitle = "Mon Parcours en Data Science & IA",
+  headerDescription = "Passionné par l'intelligence artificielle et la science des données, j'ai commencé mon parcours en 2022 avec un stage en génie logiciel. Depuis, j'ai développé mes compétences en développement mobile et me suis spécialisé en Data Science avec Orange Digital Center où j'ai remporté la 3ème place au Orange Summer Challenge 2025."
+}: TimelineProps) => {
   const ref = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const [height, setHeight] = useState(0)
@@ -49,13 +59,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     <div className="w-full md:px-10" ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl font-bold">
-          My Journey as a Frontend Developer
+          {headerTitle}
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-3xl italic">
-          I started my journey at iLotusLand and spent 2 years building IoT
-          platforms. For the past 2 years, I&#39;ve been growing at
-          DigitalFortress — and the journey continues. <br /> Here&apos;s a
-          timeline of my journey.
+          {headerDescription} <br /> Voici la chronologie de mon parcours.
         </p>
       </div>
 
