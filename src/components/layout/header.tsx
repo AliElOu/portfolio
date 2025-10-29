@@ -13,6 +13,7 @@ import { useCallback, useEffect, useRef, useState } from "react"
 import { ModeToggle } from "../mode-toggle"
 import { Logo } from "../svg/logo"
 import { Button } from "../ui/button"
+import { LanguageSwitcher } from "../language-switcher"
 import {
   Drawer,
   DrawerClose,
@@ -22,37 +23,35 @@ import {
   DrawerTrigger,
 } from "../ui/drawer"
 import { Separator } from "@radix-ui/react-dropdown-menu"
-
-const links = [
-  {
-    title: "All",
-    href: "/",
-  },
-  {
-    title: "Experience",
-    href: "/experience",
-  },
-  {
-    title: "Formation",
-    href: "/education",
-  },
-  {
-    title: "Certificats",
-    href: "/certificates",
-  },
-  {
-    title: "Projects",
-    href: "/projects",
-  },
-  // {
-  //   title: "Sponsors",
-  //   href: "/sponsors",
-  // },
-]
+import { useTranslations } from "next-intl"
 
 const pathNameDisableHeaderScroll = [""]
 
 export const Header = () => {
+  const t = useTranslations('nav')
+  
+  const links = [
+    {
+      title: t('all'),
+      href: "/",
+    },
+    {
+      title: t('education'),
+      href: "/education",
+    },
+    {
+      title: t('experience'),
+      href: "/experience",
+    },
+    {
+      title: t('certificates'),
+      href: "/certificates",
+    },
+    {
+      title: t('projects'),
+      href: "/projects",
+    },
+  ]
   const [isScrolled, setIsScrolled] = useState(false)
   const lastScrollY = useRef(0)
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
@@ -125,6 +124,7 @@ export const Header = () => {
             >
               <IconBrandGithub />
             </a>
+            <LanguageSwitcher />
             <ModeToggle />
 
             <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>

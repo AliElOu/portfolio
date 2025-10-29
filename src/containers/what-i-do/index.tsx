@@ -3,35 +3,38 @@
 import { motion } from "framer-motion"
 import { Trophy, Award, Stethoscope, Code2, Medal } from "lucide-react"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 
 export function KeyAchievements() {
+  const t = useTranslations('home.keyAchievements')
+  
   const achievements = [
     {
       icon: Trophy,
-      title: "3rd Place - Orange Summer Challenge",
-      organization: "Orange Digital Center",
+      title: t('orangeChallenge.title'),
+      organization: t('orangeChallenge.organization'),
       year: "2025",
-      description: "Winner in national competition with AWS, Meta, and EY partnership",
+      description: t('orangeChallenge.description'),
       color: "orange",
       gradient: "from-orange-500/10 to-yellow-500/10 dark:from-orange-500/20 dark:to-yellow-500/20",
       image: "/images/achievements/orange-challenge.jpg"
     },
     {
       icon: Stethoscope,
-      title: "Healthcare Hackathon Participant",
-      organization: "Healthcare Innovation",
+      title: t('healthcareHackathon.title'),
+      organization: t('healthcareHackathon.organization'),
       year: "2024",
-      description: "Developed innovative healthcare application during intensive hackathon",
+      description: t('healthcareHackathon.description'),
       color: "red",
       gradient: "from-red-500/10 to-pink-500/10 dark:from-red-500/20 dark:to-pink-500/20",
       image: "/images/achievements/healthcare-hackathon.jpg"
     },
     {
       icon: Award,
-      title: "4+ Professional Certifications",
-      organization: "Oracle, 365 DS, University of Michigan",
+      title: t('certifications.title'),
+      organization: t('certifications.organization'),
       year: "2024-2025",
-      description: "Oracle GenAI, TensorFlow Deep Learning, Python Data Structures",
+      description: t('certifications.description'),
       color: "blue",
       gradient: "from-blue-500/10 to-purple-500/10 dark:from-blue-500/20 dark:to-purple-500/20",
       image: "/images/achievements/certifications.jpg",
@@ -46,11 +49,11 @@ export function KeyAchievements() {
           <div className="inline-flex items-center gap-2 mb-4">
             <Medal className="w-8 h-8 text-yellow-600 dark:text-yellow-400" />
             <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white">
-              Key Achievements
+              {t('title')}
             </h2>
           </div>
           <p className="text-lg text-neutral-600 dark:text-neutral-400">
-            Recognition and milestones in my journey
+            {t('subtitle')}
           </p>
         </div>
 

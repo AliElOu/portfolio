@@ -2,33 +2,36 @@
 
 import { motion } from "framer-motion"
 import { Briefcase, MapPin, Calendar } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export function WorkTimeline() {
+  const t = useTranslations('home.workExperience')
+  
   const experiences = [
     {
       year: "2025",
-      company: "Orange Digital Center",
-      role: "Data Scientist",
-      location: "Morocco",
-      achievement: "Winner of Orange Summer Challenge",
+      company: t('experiences.orange.company'),
+      role: t('experiences.orange.role'),
+      location: t('experiences.orange.location'),
+      achievement: t('experiences.orange.achievement'),
       icon: "🍊",
       color: "orange"
     },
     {
       year: "2023",
-      company: "Teima Info",
-      role: "Mobile Developer",
-      location: "Morocco",
-      achievement: "E-commerce Flutter Application",
+      company: t('experiences.teima.company'),
+      role: t('experiences.teima.role'),
+      location: t('experiences.teima.location'),
+      achievement: t('experiences.teima.achievement'),
       icon: "📱",
       color: "blue"
     },
     {
       year: "2022",
-      company: "E2s",
-      role: "Software Engineer",
-      location: "Morocco",
-      achievement: "Desktop Management System",
+      company: t('experiences.e2s.company'),
+      role: t('experiences.e2s.role'),
+      location: t('experiences.e2s.location'),
+      achievement: t('experiences.e2s.achievement'),
       icon: "💼",
       color: "purple"
     }
@@ -39,10 +42,10 @@ export function WorkTimeline() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-4">
-            Work Experience
+            {t('title')}
           </h2>
           <p className="text-lg text-neutral-600 dark:text-neutral-400">
-            Professional journey in tech
+            {t('subtitle')}
           </p>
         </div>
 
@@ -119,7 +122,7 @@ export function WorkTimeline() {
             href="/experience"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors duration-300"
           >
-            View Full Experience
+            {t('viewFull')}
           </a>
         </div>
       </div>

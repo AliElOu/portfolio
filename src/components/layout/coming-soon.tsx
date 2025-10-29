@@ -6,6 +6,7 @@ import { HoverBorderGradient } from "../ui/hover-border-gradient"
 import { Logo } from "../svg/logo"
 import { useRouter } from "next/navigation"
 import { FullScreen } from "../full-screen"
+import { CheckCircle, Info } from "lucide-react"
 
 export const ComingSoonPage = ({ pageName }: { pageName?: string }) => {
   const [mounted, setMounted] = useState(false)
@@ -21,44 +22,44 @@ export const ComingSoonPage = ({ pageName }: { pageName?: string }) => {
       <Terminal>
         <TypingAnimation>&gt; npm init ali-portfolio</TypingAnimation>
 
-        <AnimatedSpan delay={1500} className="text-green-500">
-          <span>✔ Design checks.</span>
+        <AnimatedSpan delay={1500} className="text-green-500 flex items-center gap-2">
+          <CheckCircle className="w-4 h-4" /> <span>Design checks.</span>
         </AnimatedSpan>
 
-        <AnimatedSpan delay={2000} className="text-green-500">
-          <span>✔ Setting up portfolio framework. Using Next.js.</span>
+        <AnimatedSpan delay={2000} className="text-green-500 flex items-center gap-2">
+          <CheckCircle className="w-4 h-4" /> <span>Setting up portfolio framework. Using Next.js.</span>
         </AnimatedSpan>
 
-        <AnimatedSpan delay={2500} className="text-green-500">
-          <span>✔ Implementing responsive design with Tailwind CSS.</span>
+        <AnimatedSpan delay={2500} className="text-green-500 flex items-center gap-2">
+          <CheckCircle className="w-4 h-4" /> <span>Implementing responsive design with Tailwind CSS.</span>
         </AnimatedSpan>
 
-        <AnimatedSpan delay={3000} className="text-green-500">
-          <span>✔ Creating component architecture.</span>
+        <AnimatedSpan delay={3000} className="text-green-500 flex items-center gap-2">
+          <CheckCircle className="w-4 h-4" /> <span>Creating component architecture.</span>
         </AnimatedSpan>
 
-        <AnimatedSpan delay={3500} className="text-green-500">
-          <span>✔ Building project showcase section.</span>
+        <AnimatedSpan delay={3500} className="text-green-500 flex items-center gap-2">
+          <CheckCircle className="w-4 h-4" /> <span>Building project showcase section.</span>
         </AnimatedSpan>
 
-        <AnimatedSpan delay={4000} className="text-green-500">
-          <span>✔ Adding skills and expertise section.</span>
+        <AnimatedSpan delay={4000} className="text-green-500 flex items-center gap-2">
+          <CheckCircle className="w-4 h-4" /> <span>Adding skills and expertise section.</span>
         </AnimatedSpan>
 
-        <AnimatedSpan delay={4500} className="text-green-500">
-          <span>✔ Implementing contact form functionality.</span>
+        <AnimatedSpan delay={4500} className="text-green-500 flex items-center gap-2">
+          <CheckCircle className="w-4 h-4" /> <span>Implementing contact form functionality.</span>
         </AnimatedSpan>
 
-        <AnimatedSpan delay={5000} className="text-green-500">
-          <span>✔ Optimizing images and assets.</span>
+        <AnimatedSpan delay={5000} className="text-green-500 flex items-center gap-2">
+          <CheckCircle className="w-4 h-4" /> <span>Optimizing images and assets.</span>
         </AnimatedSpan>
 
-        <AnimatedSpan delay={5500} className="text-green-500">
-          <span>✔ Setting up animations and transitions.</span>
+        <AnimatedSpan delay={5500} className="text-green-500 flex items-center gap-2">
+          <CheckCircle className="w-4 h-4" /> <span>Setting up animations and transitions.</span>
         </AnimatedSpan>
 
-        <AnimatedSpan delay={6000} className="text-blue-500">
-          <span>ℹ {pageName}:</span>
+        <AnimatedSpan delay={6000} className="text-blue-500 flex items-center gap-2">
+          <Info className="w-4 h-4" /> <span>{pageName}:</span>
           <span className="pl-2">- Coming Soon</span>
         </AnimatedSpan>
 

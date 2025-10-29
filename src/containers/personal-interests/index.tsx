@@ -5,7 +5,7 @@ import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid"
 import { EvervaultCard } from "@/components/ui/evervault-card"
 import { cn } from "@/lib/utils"
 import { IconClipboardCopy } from "@tabler/icons-react"
-import { Blocks } from "lucide-react"
+import { Blocks, MousePointerClick } from "lucide-react"
 import { motion } from "motion/react"
 import { useEffect, useState } from "react"
 import { StackCloud } from "./stack-cloud"
@@ -106,7 +106,7 @@ const SkeletonTwo = () => {
       <div className="relative flex h-full w-full flex-col items-center justify-center">
         <StackCloud />
         <Pointer>
-          <div className="text-2xl">👆</div>
+          <MousePointerClick className="w-6 h-6" />
         </Pointer>
       </div>
     </motion.div>

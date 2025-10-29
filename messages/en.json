@@ -1,0 +1,179 @@
+{
+  "nav": {
+    "all": "Home",
+    "experience": "Experience",
+    "education": "Education",
+    "certificates": "Certificates",
+    "projects": "Projects"
+  },
+  "home": {
+    "hero": {
+      "badge": "🤖 Data Scientist & AI Engineer",
+      "greeting": "Hi, I'm",
+      "roles": {
+        "dataScientist": "Data Scientist",
+        "aiEngineer": "AI Engineer",
+        "mlEngineer": "ML Engineer"
+      }
+    },
+    "keyAchievements": {
+      "title": "Key Achievements",
+      "subtitle": "Recognition and milestones in my journey",
+      "orangeChallenge": {
+        "title": "3rd Place - Orange Summer Challenge",
+        "organization": "Orange Digital Center",
+        "description": "Winner in national competition with AWS, Meta, and EY partnership"
+      },
+      "healthcareHackathon": {
+        "title": "Healthcare Hackathon Participant",
+        "organization": "Healthcare Innovation",
+        "description": "Developed innovative healthcare application during intensive hackathon"
+      },
+      "certifications": {
+        "title": "4+ Professional Certifications",
+        "organization": "Oracle, 365 DS, University of Michigan",
+        "description": "Oracle GenAI, TensorFlow Deep Learning, Python Data Structures"
+      }
+    },
+    "featuredProjects": {
+      "title": "Featured Projects",
+      "subtitle": "Real-world AI solutions",
+      "viewAll": "View All Projects"
+    },
+    "workExperience": {
+      "title": "Work Experience",
+      "subtitle": "Professional journey in tech",
+      "viewFull": "View Full Experience",
+      "experiences": {
+        "orange": {
+          "role": "Data Scientist",
+          "company": "Orange Digital Center",
+          "location": "Morocco",
+          "achievement": "Winner of Orange Summer Challenge"
+        },
+        "teima": {
+          "role": "Mobile Developer",
+          "company": "Teima Info",
+          "location": "Morocco",
+          "achievement": "E-commerce Flutter Application"
+        },
+        "e2s": {
+          "role": "Software Engineer",
+          "company": "E2s",
+          "location": "Morocco",
+          "achievement": "Desktop Management System"
+        }
+      }
+    },
+    "techStack": {
+      "title": "Tech Stack",
+      "subtitle": "Technologies I work with daily",
+      "categories": {
+        "dataScience": "Data Science",
+        "deepLearning": "Deep Learning",
+        "cloudDevOps": "Cloud & DevOps",
+        "mobileWeb": "Mobile & Web"
+      }
+    },
+    "certifications": {
+      "title": "Featured Certifications",
+      "subtitle": "Continuously learning and growing",
+      "viewAll": "View All Certificates"
+    }
+  },
+  "projects": {
+    "categories": {
+      "computerVision": "Computer Vision & Detection",
+      "measurement": "Computer Vision & Measurement",
+      "nlp": "NLP & Chatbot",
+      "forecasting": "Forecasting & Analytics",
+      "webScraping": "NLP & Web Scraping"
+    }
+  },
+  "common": {
+    "year": "year",
+    "years": "years"
+  },
+  "experience": {
+    "pageTitle": "Experience | Ali El Ouankrimi",
+    "pageDescription": "Explore Ali El Ouankrimi's professional journey - Data Scientist with experience in Machine Learning, Deep Learning and Big Data.",
+    "headerTitle": "My Journey in Data Science & AI",
+    "headerDescription": "Passionate about artificial intelligence and data science, I started my journey in 2022 with a software engineering internship. Since then, I have developed my skills in mobile development and specialized in Data Science with Orange Digital Center where I won 3rd place at the Orange Summer Challenge 2025.",
+    "odc": {
+      "title": "Internship - Data Scientist",
+      "company": "Orange Digital Center",
+      "location": "Agadir, Morocco",
+      "period": "July - September 2025",
+      "intro": "An exceptional experience with Orange Digital Center, I had the chance to participate and win 3rd place 🥉 in the Orange Summer Challenge 2025 organized in partnership with AWS, Meta, EY.",
+      "description": "With a motivated team, we designed an intelligent cattle tracking AI platform integrating three models:",
+      "features": {
+        "detection": "Real-time detection and tracking (YOLOv8 + ByteTrack)",
+        "recognition": "Bovine facial recognition from muzzle",
+        "measurement": "Automatic morphological measurements (Keypoint Detection)"
+      }
+    },
+    "teima": {
+      "title": "Internship - Mobile Developer",
+      "company": "Teima Info",
+      "location": "Morocco",
+      "period": "April - June 2023",
+      "description": "Development of a complete E-commerce mobile application for medical products sales, built with Flutter.",
+      "features": {
+        "ui": "Complete mobile user interface development",
+        "database": "Database and product API management",
+        "payment": "Integration of payment features and order management"
+      }
+    },
+    "e2s": {
+      "title": "Internship - Software Engineer",
+      "company": "E2s",
+      "location": "Agadir, Morocco",
+      "period": "July - August 2022",
+      "description": "Participation in the Agadir cable car project and development of a management application.",
+      "features": {
+        "access": "Installation monitoring of access controls for the cable car project",
+        "stock": "Development of a desktop inventory management application",
+        "billing": "Development of automated billing system"
+      }
+    }
+  },
+  "education": {
+    "pageTitle": "Education | Ali El Ouankrimi",
+    "pageDescription": "Discover Ali El Ouankrimi's academic journey - Engineer in Data Science, Big Data and AI.",
+    "headerTitle": "My Academic Journey",
+    "headerDescription": "Graduated in Data Science, Big Data and Artificial Intelligence from ENSIASD Taroudant, with a solid foundation in Computer Science acquired at EST Guelmim. An academic path focused on excellence and technological innovation.",
+    "ensiasd": {
+      "title": "State Engineering Degree in Data Science, Big Data and AI",
+      "school": "National School of Artificial Intelligence and Data Science (ENSIASD)",
+      "location": "Taroudant, Morocco",
+      "period": "September 2023 - Present",
+      "description": "Engineering training in Data Science, Big Data and Artificial Intelligence, covering theoretical and practical aspects of cutting-edge technologies.",
+      "topics": {
+        "ml": "Machine Learning & Deep Learning",
+        "bigdata": "Big Data & Cloud Computing",
+        "ai": "Artificial Intelligence & Natural Language Processing",
+        "cv": "Computer Vision & Image/Video Processing"
+      }
+    },
+    "est": {
+      "title": "University Degree in Technology - Computer Science",
+      "school": "Higher School of Technology (EST)",
+      "location": "Guelmim, Morocco",
+      "period": "September 2021 - June 2023",
+      "description": "Technical university training in Computer Science, covering fundamentals of software development, databases and information systems.",
+      "topics": {
+        "programming": "Programming & Software Engineering",
+        "database": "Databases & SQL",
+        "webmobile": "Web & Mobile Development",
+        "networks": "Networks & Systems"
+      }
+    }
+  },
+  "certificates": {
+    "pageTitle": "Certificates | Ali El Ouankrimi",
+    "pageDescription": "Discover Ali El Ouankrimi's professional certifications in Data Science, Machine Learning, and development.",
+    "heading": "My Professional Certifications",
+    "subheading": "A collection of certifications showcasing my expertise in Data Science, Artificial Intelligence, and emerging technologies.",
+    "viewCertificate": "View Certificate"
+  }
+}

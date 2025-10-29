@@ -8,6 +8,7 @@ import { GlowingEffect } from "@/components/ui/glowing-effect"
 import { MY_NETWORKS } from "@/data/my-networks"
 import { useTheme } from "next-themes"
 import { MyResume } from "../my-resume"
+import { Bot, Database, Brain, Rocket } from "lucide-react"
 
 export function MyInformation() {
   return (
@@ -70,9 +71,9 @@ export function MyInformation() {
 
       <VelocityScroll
         numRows={1}
-        className="!text-xl md:!text-3xl opacity-50 my-6"
+        className="!text-xl md:!text-3xl opacity-50 my-6 flex items-center gap-3"
       >
-        🤖 AI • 📊 Data Science • 🧠 Machine Learning • 🚀 Innovation
+        <Bot className="w-6 h-6" /> AI • <Database className="w-6 h-6" /> Data Science • <Brain className="w-6 h-6" /> Machine Learning • <Rocket className="w-6 h-6" /> Innovation
       </VelocityScroll>
     </>
   )

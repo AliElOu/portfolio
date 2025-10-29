@@ -8,6 +8,7 @@ import { Cover } from "@/components/ui/cover"
 import { ROLE_TITLES } from "@/data/role-titles"
 import { cn } from "@/lib/utils"
 import { motion } from "framer-motion"
+import { Bot } from "lucide-react"
 import { memo, useEffect, useState } from "react"
 
 const animationTypes: AnimationVariant[] = [
@@ -79,12 +80,12 @@ export const MyUniverse = () => {
           </motion.div>
         </div>
         
-        <div className="text-lg text-zinc-600 dark:text-zinc-400 my-8 font-medium">
+        <div className="text-lg text-zinc-600 dark:text-zinc-400 my-8 font-medium flex items-center gap-2">
           <span className="font-semibold text-zinc-800 dark:text-zinc-300">
             Transforming data into intelligent solutions
           </span>
           <br />
-          with Machine Learning, Deep Learning & AI technologies 🤖
+          with Machine Learning, Deep Learning & AI technologies <Bot className="w-5 h-5 inline-block" />
         </div>
       </div>
       

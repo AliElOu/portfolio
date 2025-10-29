@@ -5,8 +5,10 @@ import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
+import { useTranslations } from "next-intl"
 
 export function FeaturedProjects() {
+  const t = useTranslations('home.featuredProjects')
   const projects = [
     {
       title: "Face Detection System",
@@ -37,17 +39,17 @@ export function FeaturedProjects() {
         <div className="flex items-center justify-between mb-12">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-2">
-              Featured Projects
+              {t('title')}
             </h2>
             <p className="text-lg text-neutral-600 dark:text-neutral-400">
-              Showcasing real-world AI solutions
+              {t('subtitle')}
             </p>
           </div>
           <Link 
             href="/projects"
             className="hidden md:flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:gap-3 transition-all duration-300 font-medium"
           >
-            View All Projects
+            {t('viewAll')}
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
