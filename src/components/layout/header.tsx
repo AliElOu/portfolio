@@ -44,12 +44,12 @@ export const Header = () => {
       href: "/experience",
     },
     {
-      title: t('certificates'),
-      href: "/certificates",
-    },
-    {
       title: t('projects'),
       href: "/projects",
+    },
+    {
+      title: t('certificates'),
+      href: "/certificates",
     },
   ]
   const [isScrolled, setIsScrolled] = useState(false)
