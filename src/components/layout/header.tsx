@@ -10,7 +10,6 @@ import {
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useCallback, useEffect, useRef, useState } from "react"
-import { ModeToggle } from "../mode-toggle"
 import Image from "next/image"
 import { Button } from "../ui/button"
 import { LanguageSwitcher } from "../language-switcher"
@@ -131,7 +130,6 @@ export const Header = () => {
               <IconBrandGithub />
             </a>
             <LanguageSwitcher />
-            <ModeToggle />
 
             <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>
               <DrawerTrigger asChild>
