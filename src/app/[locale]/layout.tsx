@@ -56,9 +56,6 @@ export const metadata: Metadata = {
       "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/open-graph-6fkPvt3jl60AhDWy2pPhfp3PKoZPrZ.png",
     ],
   },
-  icons: {
-    icon: "/favicon.ico",
-  },
 }
 
 export function generateStaticParams() {

@@ -11,7 +11,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useCallback, useEffect, useRef, useState } from "react"
 import { ModeToggle } from "../mode-toggle"
-import { Logo } from "../svg/logo"
+import Image from "next/image"
 import { Button } from "../ui/button"
 import { LanguageSwitcher } from "../language-switcher"
 import {
@@ -104,7 +104,13 @@ export const Header = () => {
           )}
         >
           <div className="flex items-center gap-2">
-            <Logo className="size-14" />
+            <Image 
+              src="/images/logo.png" 
+              alt="Logo" 
+              width={100} 
+              height={100} 
+              className="size-15 object-contain"
+            />
           </div>
           <div className="flex-1 items-center gap-3 justify-center hidden sm:flex">
             {links.map((link) => (
@@ -141,7 +147,13 @@ export const Header = () => {
               <DrawerContent className="min-h-dvh">
                 <DrawerHeader className="flex justify-between">
                   <DrawerTitle className="flex items-center gap-2">
-                    <Logo className="size-14" />
+                    <Image 
+                      src="/images/logo.png" 
+                      alt="Logo" 
+                      width={56} 
+                      height={56} 
+                      className="size-14 object-contain"
+                    />
                     alielouankrimi.com
                   </DrawerTitle>
                   <DrawerClose
