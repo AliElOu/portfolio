@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       title: t('pageTitle'),
       description: t('pageDescription'),
-      url: `https://alielouankrimi.com/${locale}/certificates`,
+      url: `https://www.alielouankrimi.me/${locale}/certificates`,
       siteName: "Ali El Ouankrimi",
       images: [],
     },
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: t('pageDescription'),
     },
     alternates: {
-      canonical: `https://alielouankrimi.com/${locale}/certificates`,
+      canonical: `https://www.alielouankrimi.me/${locale}/certificates`,
     },
   }
 }

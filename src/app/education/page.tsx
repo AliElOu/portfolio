@@ -9,7 +9,7 @@ export const metadata = {
     title: "Formation | Ali El Ouankrimi",
     description:
       "Parcours académique d'Ali El Ouankrimi : ENSIASD Taroudant et EST Guelmim.",
-    url: "https://alielouankrimi.com/education",
+    url: "https://alielouankrimi.me/education",
     siteName: "Ali El Ouankrimi",
     images: [],
   },
@@ -20,7 +20,7 @@ export const metadata = {
       "Découvrez le parcours académique d'Ali El Ouankrimi en Data Science et IA.",
   },
   alternates: {
-    canonical: "https://alielouankrimi.com/education",
+    canonical: "https://alielouankrimi.me/education",
   },
 }
 

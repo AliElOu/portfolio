@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "Ali El Ouankrimi - Data Scientist & AI Engineer",
     description:
       "Découvrez l'expertise d'Ali El Ouankrimi en Data Science, Machine Learning et Big Data. Consultez mes projets et compétences techniques.",
-    url: "https://alielouankrimi.com",
+    url: "https://www.alielouankrimi.me",
     type: "website",
     images: [
       {

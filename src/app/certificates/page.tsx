@@ -9,7 +9,7 @@ export const metadata = {
     title: "Certificats | Ali El Ouankrimi",
     description:
       "Certifications en Oracle GenAI, TensorFlow, Python et Flutter.",
-    url: "https://alielouankrimi.com/certificates",
+    url: "https://alielouankrimi.me/certificates",
     siteName: "Ali El Ouankrimi",
     images: [],
   },
@@ -20,7 +20,7 @@ export const metadata = {
       "Découvrez les certifications professionnelles d'Ali El Ouankrimi.",
   },
   alternates: {
-    canonical: "https://alielouankrimi.com/certificates",
+    canonical: "https://alielouankrimi.me/certificates",
   },
 }
 

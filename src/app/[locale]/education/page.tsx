@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       title: t('pageTitle'),
       description: t('pageDescription'),
-      url: `https://alielouankrimi.com/${locale}/education`,
+      url: `https://www.alielouankrimi.me/${locale}/education`,
       siteName: "Ali El Ouankrimi",
       images: [],
     },
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: t('pageDescription'),
     },
     alternates: {
-      canonical: `https://alielouankrimi.com/${locale}/education`,
+      canonical: `https://www.alielouankrimi.me/${locale}/education`,
     },
   }
 }

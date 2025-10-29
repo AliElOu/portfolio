@@ -68,7 +68,7 @@ export const ComingSoonPage = ({ pageName }: { pageName?: string }) => {
         </TypingAnimation>
 
         <TypingAnimation delay={7000} className="text-muted-foreground">
-          Launching soon at alielouankrimi.com
+          Launching soon at www.alielouankrimi.me
         </TypingAnimation>
       </Terminal>
 

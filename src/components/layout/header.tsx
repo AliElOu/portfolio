@@ -102,15 +102,15 @@ export const Header = () => {
               : "bg-transparent w-full xl:w-[70%]"
           )}
         >
-          <div className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2 cursor-pointer">
             <Image 
               src="/images/logo.png" 
               alt="Logo" 
               width={100} 
               height={100} 
-              className="size-15 object-contain"
+              className="size-15 object-contain hover:opacity-80 transition-opacity"
             />
-          </div>
+          </Link>
           <div className="flex-1 items-center gap-3 justify-center hidden sm:flex">
             {links.map((link) => (
               <HeaderLink
@@ -145,14 +145,15 @@ export const Header = () => {
               <DrawerContent className="min-h-dvh">
                 <DrawerHeader className="flex justify-between">
                   <DrawerTitle className="flex items-center gap-2">
-                    <Image 
-                      src="/images/logo.png" 
-                      alt="Logo" 
-                      width={56} 
-                      height={56} 
-                      className="size-14 object-contain"
-                    />
-                    alielouankrimi.com
+                    <Link href="/" className="flex items-center gap-2">
+                      <Image 
+                        src="/images/logo.png" 
+                        alt="Logo" 
+                        width={56} 
+                        height={56} 
+                        className="size-14 object-contain"
+                      />
+                    </Link>
                   </DrawerTitle>
                   <DrawerClose
                     asChild

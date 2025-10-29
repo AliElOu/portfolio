@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "À propos | Ali El Ouankrimi",
     description:
       "Découvrez le parcours d'Ali El Ouankrimi dans le monde de la Data Science et de l'IA.",
-    url: "https://alielouankrimi.com/about",
+    url: "https://alielouankrimi.me/about",
     siteName: "Ali El Ouankrimi",
     type: "website",
     locale: "fr_FR",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     // images: ["https://alielouankrimi.com/images/seo/about-og-image.png"],
   },
   alternates: {
-    canonical: "https://alielouankrimi.com/about",
+    canonical: "https://www.alielouankrimi.me/about",
   },
 }
 

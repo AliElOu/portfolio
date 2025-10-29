@@ -9,7 +9,7 @@ export const metadata = {
     title: "Expérience | Ali El Ouankrimi",
     description:
       "Data Scientist avec une expérience pratique en Python, TensorFlow, et analyse de données.",
-    url: "https://alielouankrimi.com/experience",
+    url: "https://alielouankrimi.me/experience",
     siteName: "Ali El Ouankrimi",
     images: [
       // {
@@ -28,7 +28,7 @@ export const metadata = {
     //   images: ["https://alielouankrimi.com/images/seo/experience-og-image.png"],
   },
   alternates: {
-    canonical: "https://alielouankrimi.com/experience",
+    canonical: "https://alielouankrimi.me/experience",
   },
 }
 
