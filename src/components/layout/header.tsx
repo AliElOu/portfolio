@@ -7,6 +7,7 @@ import {
   IconMenu2,
   IconX,
 } from "@tabler/icons-react"
+import { Linkedin } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useCallback, useEffect, useRef, useState } from "react"
@@ -121,6 +122,14 @@ export const Header = () => {
             ))}
           </div>
           <div className="flex items-center gap-2">
+            <a
+              href="https://www.linkedin.com/in/alielouankrimi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border p-2 rounded-2xl hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors duration-300"
+            >
+              <Linkedin className="w-6 h-6" />
+            </a>
             <a
               href={"https://github.com/AliElOu"}
               target="_blank"

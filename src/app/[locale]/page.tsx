@@ -5,6 +5,7 @@ import { FeaturedProjects } from "@/containers/featured-projects"
 import { WorkTimeline } from "@/containers/work-timeline"
 import { TechStackSection } from "@/containers/tech-stack-section"
 import { CertificationsHighlight } from "@/containers/certifications-highlight"
+import { ContactSection } from "@/containers/contact-section"
 
 export default function Home() {
   return (
@@ -28,6 +29,9 @@ export default function Home() {
 
       {/* Certifications Highlight */}
       <CertificationsHighlight />
+
+      {/* Contact Section */}
+      <ContactSection />
     </div>
   )
 }

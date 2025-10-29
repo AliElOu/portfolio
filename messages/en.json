@@ -175,5 +175,23 @@
     "heading": "My Professional Certifications",
     "subheading": "A collection of certifications showcasing my expertise in Data Science, Artificial Intelligence, and emerging technologies.",
     "viewCertificate": "View Certificate"
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "subtitle": "Interested in collaborating or learning more about my work? Feel free to reach out!",
+    "email": {
+      "label": "Email",
+      "action": "Click to contact"
+    },
+    "phone": {
+      "label": "Phone",
+      "action": "Click to contact"
+    },
+    "linkedin": {
+      "label": "LinkedIn",
+      "action": "Click to visit"
+    },
+    "footer": "Or find me on",
+    "github": "GitHub"
   }
 }

@@ -175,5 +175,23 @@
     "heading": "Mes Certifications Professionnelles",
     "subheading": "Une collection de certifications qui témoignent de mon expertise en Data Science, Intelligence Artificielle, et technologies émergentes.",
     "viewCertificate": "Voir le certificat"
+  },
+  "contact": {
+    "title": "Restons en Contact",
+    "subtitle": "Intéressé par une collaboration ou en savoir plus sur mon travail ? N'hésitez pas à me contacter !",
+    "email": {
+      "label": "Email",
+      "action": "Cliquer pour contacter"
+    },
+    "phone": {
+      "label": "Téléphone",
+      "action": "Cliquer pour contacter"
+    },
+    "linkedin": {
+      "label": "LinkedIn",
+      "action": "Cliquer pour visiter"
+    },
+    "footer": "Ou retrouvez-moi sur",
+    "github": "GitHub"
   }
 }
