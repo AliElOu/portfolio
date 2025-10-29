@@ -1,6 +1,5 @@
 "use client"
 
-import { usePathname } from "next/navigation"
 import { useLocale } from "next-intl"
 import { Button } from "@/components/ui/button"
 import {
@@ -18,7 +17,6 @@ const languages = [
 
 export function LanguageSwitcher() {
   const currentLocale = useLocale()
-  const pathname = usePathname()
 
   const switchLanguage = (newLocale: string) => {
     if (newLocale === currentLocale) return

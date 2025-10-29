@@ -1,5 +1,4 @@
 import { FullScreen } from "@/components/full-screen"
-import { HoverBorderGradient } from "@/components/ui/hover-border-gradient"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {

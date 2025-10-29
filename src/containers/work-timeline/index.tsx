@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Briefcase, MapPin, Calendar } from "lucide-react"
 import { useTranslations } from "next-intl"
+import Link from "next/link"
 
 export function WorkTimeline() {
   const t = useTranslations('home.workExperience')
@@ -118,12 +119,12 @@ export function WorkTimeline() {
         </div>
 
         <div className="mt-12 text-center">
-          <a
+          <Link
             href="/experience"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors duration-300"
           >
             {t('viewFull')}
-          </a>
+          </Link>
         </div>
       </div>
     </div>
