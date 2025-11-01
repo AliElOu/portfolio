@@ -3,7 +3,7 @@ import { BlurImage } from "@/components/ui/apple-cards-carousel"
 export const experiences = [
   {
     title: 'Stage - Data Scientist',
-    company: 'Orange Digital Center',
+    company: 'Orange Maroc',
     startDate: 'Juillet 2025',
     endDate: 'Sept. 2025',
     description: [
@@ -46,7 +46,7 @@ export const EXPERIENCE_TIMELINE = [
             Stage - Data Scientist
           </h3>
           <p className="text-lg font-semibold text-neutral-700 dark:text-neutral-300">
-            Orange Digital Center
+            Orange Maroc
           </p>
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
             📍 Agadir, Maroc
@@ -54,7 +54,7 @@ export const EXPERIENCE_TIMELINE = [
         </div>
         
         <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-4">
-          Une expérience exceptionnelle avec Orange Digital Center, j&apos;ai eu la chance de participer et gagner grâce au projet réalisé la troisième place 🥉 au <strong>Orange Summer Challenge 2025</strong> organisé en partenariat avec <strong>AWS, Meta, EY</strong>.
+          Une expérience exceptionnelle avec Orange Maroc, j&apos;ai eu la chance de participer et gagner grâce au projet réalisé la troisième place 🥉 au <strong>Orange Summer Challenge 2025</strong> organisé en partenariat avec <strong>AWS, Meta, EY</strong>.
         </p>
         
         <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-6">

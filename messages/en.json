@@ -21,7 +21,7 @@
       "subtitle": "Recognition and milestones in my journey",
       "orangeChallenge": {
         "title": "3rd Place - Orange Summer Challenge",
-        "organization": "Orange Digital Center",
+        "organization": "Orange Maroc",
         "description": "Winner in national competition with AWS, Meta, and EY partnership"
       },
       "healthcareHackathon": {
@@ -47,7 +47,7 @@
       "experiences": {
         "orange": {
           "role": "Data Scientist",
-          "company": "Orange Digital Center",
+          "company": "Orange Maroc",
           "location": "Morocco",
           "achievement": "Winner of Orange Summer Challenge"
         },
@@ -98,13 +98,13 @@
     "pageTitle": "Experience | Ali El Ouankrimi",
     "pageDescription": "Explore Ali El Ouankrimi's professional journey - Data Scientist with experience in Machine Learning, Deep Learning and Big Data.",
     "headerTitle": "My Journey in Data Science & AI",
-    "headerDescription": "Passionate about artificial intelligence and data science, I started my journey in 2022 with a software engineering internship. Since then, I have developed my skills in mobile development and specialized in Data Science with Orange Digital Center where I won 3rd place at the Orange Summer Challenge 2025.",
+    "headerDescription": "Passionate about artificial intelligence and data science, I started my journey in 2022 with a software engineering internship. Since then, I have developed my skills in mobile development and specialized in Data Science with Orange Maroc where I won 3rd place at the Orange Summer Challenge 2025.",
     "odc": {
       "title": "Internship - Data Scientist",
-      "company": "Orange Digital Center",
+      "company": "Orange Maroc",
       "location": "Agadir, Morocco",
       "period": "July - September 2025",
-      "intro": "An exceptional experience with Orange Digital Center, I had the chance to participate and win 3rd place 🥉 in the Orange Summer Challenge 2025 organized in partnership with AWS, Meta, EY.",
+      "intro": "An exceptional experience with Orange Maroc, I had the chance to participate and win 3rd place 🥉 in the Orange Summer Challenge 2025 organized in partnership with AWS, Meta, EY.",
       "description": "With a motivated team, we designed an intelligent cattle tracking AI platform integrating three models:",
       "features": {
         "detection": "Real-time detection and tracking (YOLOv8 + ByteTrack)",

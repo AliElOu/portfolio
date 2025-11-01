@@ -17,7 +17,7 @@ interface TimelineProps {
 export const Timeline = ({ 
   data, 
   headerTitle = "Mon Parcours en Data Science & IA",
-  headerDescription = "Passionné par l'intelligence artificielle et la science des données, j'ai commencé mon parcours en 2022 avec un stage en génie logiciel. Depuis, j'ai développé mes compétences en développement mobile et me suis spécialisé en Data Science avec Orange Digital Center où j'ai remporté la 3ème place au Orange Summer Challenge 2025."
+  headerDescription = "Passionné par l'intelligence artificielle et la science des données, j'ai commencé mon parcours en 2022 avec un stage en génie logiciel. Depuis, j'ai développé mes compétences en développement mobile et me suis spécialisé en Data Science avec Orange Maroc où j'ai remporté la 3ème place au Orange Summer Challenge 2025."
 }: TimelineProps) => {
   const ref = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)

@@ -21,7 +21,7 @@
       "subtitle": "Reconnaissance et jalons dans mon parcours",
       "orangeChallenge": {
         "title": "3ème Place - Orange Summer Challenge",
-        "organization": "Orange Digital Center",
+        "organization": "Orange Maroc",
         "description": "Lauréat d'une compétition nationale en partenariat avec AWS, Meta et EY"
       },
       "healthcareHackathon": {
@@ -47,7 +47,7 @@
       "experiences": {
         "orange": {
           "role": "Data Scientist",
-          "company": "Orange Digital Center",
+          "company": "Orange Maroc",
           "location": "Maroc",
           "achievement": "Lauréat de l'Orange Summer Challenge"
         },
@@ -98,13 +98,13 @@
     "pageTitle": "Expérience | Ali El Ouankrimi",
     "pageDescription": "Explorez le parcours professionnel d'Ali El Ouankrimi - Data Scientist avec expérience en Machine Learning, Deep Learning et Big Data.",
     "headerTitle": "Mon Parcours en Data Science & IA",
-    "headerDescription": "Passionné par l'intelligence artificielle et la science des données, j'ai commencé mon parcours en 2022 avec un stage en génie logiciel. Depuis, j'ai développé mes compétences en développement mobile et me suis spécialisé en Data Science avec Orange Digital Center où j'ai remporté la 3ème place au Orange Summer Challenge 2025.",
+    "headerDescription": "Passionné par l'intelligence artificielle et la science des données, j'ai commencé mon parcours en 2022 avec un stage en génie logiciel. Depuis, j'ai développé mes compétences en développement mobile et me suis spécialisé en Data Science avec Orange Maroc où j'ai remporté la 3ème place au Orange Summer Challenge 2025.",
     "odc": {
       "title": "Stage - Data Scientist",
-      "company": "Orange Digital Center",
+      "company": "Orange Maroc",
       "location": "Agadir, Maroc",
       "period": "Juillet - Septembre 2025",
-      "intro": "Une expérience exceptionnelle avec Orange Digital Center, j'ai eu la chance de participer et gagner grâce au projet réalisé la troisième place 🥉 au Orange Summer Challenge 2025 organisé en partenariat avec AWS, Meta, EY.",
+      "intro": "Une expérience exceptionnelle avec Orange Maroc, j'ai eu la chance de participer et gagner grâce au projet réalisé la troisième place 🥉 au Orange Summer Challenge 2025 organisé en partenariat avec AWS, Meta, EY.",
       "description": "Avec une équipe motivée, nous avons conçu une plateforme d'IA de suivi intelligent du bétail intégrant trois modèles :",
       "features": {
         "detection": "Détection et suivi en temps réel (YOLOv8 + ByteTrack)",
