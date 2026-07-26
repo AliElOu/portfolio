@@ -120,11 +120,11 @@
     "items": {
       "hiringLlm": {
         "title": "Hiring LLM — Automatisation intelligente de la présélection des candidats",
-        "description": "Une plateforme SaaS d'acquisition de talents basée sur les LLM, qui automatise la réception des candidatures, l'enrichissement des profils, leur analyse et les workflows des recruteurs grâce à des agents de recherche autonomes et des pipelines IA sécurisés."
+        "description": "Une plateforme SaaS d'IA générative orientée production qui automatise le pipeline d'acquisition de talents, de la collecte des candidatures via des boîtes e-mail et formulaires connectés jusqu'à l'extraction des CV, l'enrichissement des candidats, l'analyse des profils et leur présélection. Développée avec FastAPI, Google Gen AI SDK, Firebase, Next.js et GCP, elle combine des agents de recherche web autonomes basés sur Playwright et Firecrawl avec des tests de sécurité contre les injections de prompts, les fuites de données et les CV malveillants. Le suivi des tokens et l'optimisation des appels API réduisent la latence et les coûts d'inférence afin de garantir une plateforme scalable et efficace."
       },
       "smartJobSeeker": {
         "title": "Smart Job Seeker — Adaptation intelligente de CV par IA",
-        "description": "Application d'optimisation de CV basée sur Google Gemini, capable d'adapter automatiquement le contenu aux offres d'emploi et de générer des lettres de motivation ciblées. Elle intègre une architecture d'extraction intelligente de CV et une API assurant une adaptation précise et une gestion optimisée des ressources."
+        "description": "Une application propulsée par l'IA qui transforme un CV générique en candidature ciblée pour une offre d'emploi précise. Grâce à Google Gemini, LangChain et au Prompt Engineering, elle analyse les exigences du poste, extrait et structure intelligemment le contenu du CV, adapte le profil du candidat et génère une lettre de motivation personnalisée. Un backend FastAPI et une interface React/Next.js offrent un parcours complet, tandis que l'architecture API assure une génération précise et une gestion efficace des ressources."
       },
       "cattleFace": {
         "title": "Système de reconnaissance faciale bovine",

@@ -120,11 +120,11 @@
     "items": {
       "hiringLlm": {
         "title": "Hiring LLM — Smart Candidate Screening Automation",
-        "description": "An LLM-powered talent acquisition SaaS platform that automates application intake, candidate enrichment, profile analysis, and recruiter workflows using autonomous research agents and secure AI pipelines."
+        "description": "A production-oriented generative AI SaaS platform that automates the talent acquisition pipeline, from collecting applications through connected inboxes and forms to CV extraction, candidate enrichment, profile analysis, and screening. Built with FastAPI, Google Gen AI SDK, Firebase, Next.js, and GCP, it combines autonomous web research agents powered by Playwright and Firecrawl with security testing against prompt injection, data leakage, and malicious CV content. Token monitoring and optimized API calls reduce inference latency and cost, helping the platform remain scalable and efficient."
       },
       "smartJobSeeker": {
         "title": "Smart Job Seeker — AI-Powered CV Tailoring",
-        "description": "A Google Gemini-powered CV optimization application that automatically tailors CV content to job opportunities and generates targeted cover letters. It combines intelligent CV extraction with an API architecture for precise tailoring and efficient resource management."
+        "description": "An AI-powered application that transforms a generic CV into a targeted application for a specific job opportunity. Using Google Gemini, LangChain, and prompt engineering, it analyzes job requirements, intelligently extracts and structures CV content, adapts the candidate's profile, and generates a tailored cover letter. A FastAPI backend and React/Next.js interface provide a clear end-to-end workflow, while the API architecture supports precise generation and efficient resource management."
       },
       "cattleFace": {
         "title": "Cattle Face Detection System",
