@@ -107,6 +107,8 @@ export function CompareDemo() {
           alt={t("portraitAlt")}
           fill
           sizes="(min-width: 1024px) 36rem, 28rem"
+          priority
+          unoptimized
           className="w-full h-full object-cover"
         />
         {/* Badge overlay */}
