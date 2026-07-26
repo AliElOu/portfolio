@@ -1,32 +1,20 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Award, CheckCircle, GraduationCap, Brain, Code } from "lucide-react"
+import { ArrowRight, Award, ExternalLink, GraduationCap, Brain, Code } from "lucide-react"
 import Link from "next/link"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
+import { CERTIFICATES } from "@/data/certificates"
 
 export function CertificationsHighlight() {
   const t = useTranslations('home.certifications')
-  const topCertifications = [
-    {
-      title: "Oracle GenAI Professional",
-      organization: "Oracle",
-      year: "2025",
-      icon: GraduationCap
-    },
-    {
-      title: "TensorFlow Deep Learning Specialization",
-      organization: "365 Data Science",
-      year: "2024",
-      icon: Brain
-    },
-    {
-      title: "Python Data Structures",
-      organization: "University of Michigan",
-      year: "2024",
-      icon: Code
-    }
-  ]
+  const locale = useLocale()
+  const certificateIcons = [GraduationCap, Brain, Code]
+  const topCertifications = CERTIFICATES.slice(0, 3).map((certificate, index) => ({
+    ...certificate,
+    year: certificate.issueDate.slice(0, 4),
+    icon: certificateIcons[index],
+  }))
 
   return (
     <div className="w-full py-12">
@@ -55,13 +43,17 @@ export function CertificationsHighlight() {
               {topCertifications.map((cert, index) => {
                 const CertIcon = cert.icon
                 return (
-                  <motion.div
-                    key={index}
+                  <motion.a
+                    key={cert.id}
+                    href={cert.credentialUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
+                    whileHover={{ x: 4 }}
                     transition={{ delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className="flex items-center gap-4 p-4 rounded-xl bg-white/50 dark:bg-neutral-900/50 border border-neutral-200 dark:border-neutral-800 backdrop-blur-sm hover:bg-white dark:hover:bg-neutral-900 transition-all duration-300"
+                    className="flex items-center gap-4 p-4 rounded-xl bg-white/50 dark:bg-neutral-900/50 border border-neutral-200 dark:border-neutral-800 backdrop-blur-sm hover:bg-white dark:hover:bg-neutral-900 hover:border-blue-400 dark:hover:border-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 transition-colors duration-300"
                   >
                     <CertIcon className="w-7 h-7 text-blue-600 dark:text-blue-400" />
                     <div className="flex-1">
@@ -72,15 +64,15 @@ export function CertificationsHighlight() {
                         {cert.organization} • {cert.year}
                       </p>
                     </div>
-                    <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400" />
-                  </motion.div>
+                    <ExternalLink className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                  </motion.a>
                 )
               })}
             </div>
 
             <div className="text-center">
               <Link
-                href="/certificates"
+                href={`/${locale}/certificates`}
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium transition-all duration-300 hover:gap-3 shadow-lg hover:shadow-xl"
               >
                 {t('viewAll')}

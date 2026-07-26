@@ -1,6 +1,6 @@
 "use client"
 
-import { useLocale } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -17,6 +17,7 @@ const languages = [
 
 export function LanguageSwitcher() {
   const currentLocale = useLocale()
+  const t = useTranslations("nav")
 
   const switchLanguage = (newLocale: string) => {
     if (newLocale === currentLocale) return
@@ -39,14 +40,6 @@ export function LanguageSwitcher() {
     // Build new path with target locale (always use prefix)
     const newPath = `/${newLocale}${cleanPath}`
     
-    console.log('Language switch debug:', {
-      currentPath,
-      cleanPath,
-      currentLocale,
-      newLocale,
-      newPath
-    })
-    
     // Navigate to new path
     window.location.href = newPath
   }
@@ -60,7 +53,7 @@ export function LanguageSwitcher() {
           className="border rounded-2xl hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors duration-300"
         >
           <Languages className="h-[1.2rem] w-[1.2rem]" />
-          <span className="sr-only">Switch language</span>
+          <span className="sr-only">{t("switchLanguage")}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">

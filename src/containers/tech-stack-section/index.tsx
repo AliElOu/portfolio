@@ -5,8 +5,8 @@ import { Badge } from "@/components/ui/badge"
 import { 
   SiPython, SiPandas, SiNumpy, SiScikitlearn, 
   SiTensorflow, SiPytorch, SiKeras, SiOpencv,
-  SiAmazon, SiDocker, SiGit, SiLinux,
-  SiFlutter, SiFirebase, SiFastapi, SiMongodb
+  SiAmazon, SiDocker, SiGit, SiGooglecloud, SiLangchain, SiLinux,
+  SiFlutter, SiFirebase, SiFastapi, SiMongodb, SiReact
 } from "react-icons/si"
 import { TbChartBar } from "react-icons/tb"
 import { RiRobot2Fill } from "react-icons/ri"
@@ -42,7 +42,10 @@ export function TechStackSection() {
         { name: "PyTorch", icon: SiPytorch },
         { name: "Keras", icon: SiKeras },
         { name: "YOLO", icon: RiRobot2Fill },
-        { name: "OpenCV", icon: SiOpencv }
+        { name: "OpenCV", icon: SiOpencv },
+        { name: "LangChain", icon: SiLangchain },
+        { name: "RAG", icon: Database },
+        { name: "LLMs", icon: RiRobot2Fill }
       ]
     },
     {
@@ -51,6 +54,7 @@ export function TechStackSection() {
       color: "cyan",
       techs: [
         { name: "AWS", icon: SiAmazon },
+        { name: "GCP", icon: SiGooglecloud },
         { name: "Docker", icon: SiDocker },
         { name: "Airflow", icon: RiRobot2Fill },
         { name: "Git", icon: SiGit },
@@ -63,6 +67,7 @@ export function TechStackSection() {
       color: "green",
       techs: [
         { name: "Flutter", icon: SiFlutter },
+        { name: "ReactJS", icon: SiReact },
         { name: "Firebase", icon: SiFirebase },
         { name: "FastAPI", icon: SiFastapi },
         { name: "MongoDB", icon: SiMongodb }

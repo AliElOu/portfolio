@@ -27,6 +27,43 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   
   const EXPERIENCE_TIMELINE = [
     {
+      title: t('sanadtech.period'),
+      content: (
+        <div>
+          <div className="mb-4">
+            <h3 className="text-xl md:text-2xl font-bold text-neutral-900 dark:text-neutral-100">
+              {t('sanadtech.title')}
+            </h3>
+            <p className="text-lg font-semibold text-neutral-700 dark:text-neutral-300">
+              {t('sanadtech.company')}
+            </p>
+            <p className="text-sm text-neutral-600 dark:text-neutral-400 flex items-center gap-1">
+              <MapPin className="w-4 h-4" /> {t('sanadtech.location')}
+            </p>
+          </div>
+
+          <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-6">
+            {t('sanadtech.description')}
+          </p>
+
+          <div className="mb-8 space-y-2">
+            <div className="flex gap-2 items-start text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
+              <Sparkles className="w-5 h-5 mt-0.5 flex-shrink-0 text-blue-600" />
+              <span>{t('sanadtech.features.platform')}</span>
+            </div>
+            <div className="flex gap-2 items-start text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
+              <Sparkles className="w-5 h-5 mt-0.5 flex-shrink-0 text-blue-600" />
+              <span>{t('sanadtech.features.agentsAndSecurity')}</span>
+            </div>
+            <div className="flex gap-2 items-start text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
+              <Sparkles className="w-5 h-5 mt-0.5 flex-shrink-0 text-blue-600" />
+              <span>{t('sanadtech.features.optimizationAndIntegrations')}</span>
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
       title: t('odc.period'),
       content: (
         <div>
@@ -199,6 +236,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           data={EXPERIENCE_TIMELINE}
           headerTitle={t('headerTitle')}
           headerDescription={t('headerDescription')}
+          headerCaption={t('timelineIntro')}
         />
       </FullScreen>
     </div>

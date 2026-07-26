@@ -151,6 +151,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           data={EDUCATION_TIMELINE}
           headerTitle={t('headerTitle')}
           headerDescription={t('headerDescription')}
+          headerCaption={t('timelineIntro')}
         />
       </FullScreen>
     </div>

@@ -6,10 +6,20 @@ import { CERTIFICATES } from "@/data/certificates"
 import { ExternalLink, Award } from "lucide-react"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 
 export function CertificatesGrid() {
   const t = useTranslations('certificates')
+  const locale = useLocale()
+  const formatIssueDate = (issueDate: string) => {
+    const [year, month] = issueDate.split("-").map(Number)
+
+    return new Intl.DateTimeFormat(locale, {
+      month: "long",
+      year: "numeric",
+      timeZone: "UTC",
+    }).format(new Date(Date.UTC(year, month - 1)))
+  }
   
   const handleCertificateClick = (url?: string) => {
     if (url && url !== "#") {
@@ -56,7 +66,7 @@ export function CertificatesGrid() {
                 {/* Badge de date */}
                 <div className="absolute top-4 right-4 z-10">
                   <Badge className="bg-blue-600 text-white border-0 shadow-lg">
-                    {cert.issueDate}
+                    {formatIssueDate(cert.issueDate)}
                   </Badge>
                 </div>
 

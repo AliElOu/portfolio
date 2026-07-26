@@ -2,13 +2,32 @@
 
 import { motion } from "framer-motion"
 import { Briefcase, MapPin, Calendar } from "lucide-react"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
+import Image from "next/image"
 import Link from "next/link"
 
 export function WorkTimeline() {
   const t = useTranslations('home.workExperience')
+  const locale = useLocale()
   
   const experiences = [
+    {
+      year: "2026",
+      company: t('experiences.sanadtech.company'),
+      role: t('experiences.sanadtech.role'),
+      location: t('experiences.sanadtech.location'),
+      achievement: t('experiences.sanadtech.achievement'),
+      icon: (
+        <Image
+          src="/images/experience/sanadtech-symbol.svg"
+          alt="SanadTech"
+          width={32}
+          height={18}
+          className="block h-auto w-8 object-contain"
+        />
+      ),
+      color: "sanadtech"
+    },
     {
       year: "2025",
       company: t('experiences.orange.company'),
@@ -83,6 +102,8 @@ export function WorkTimeline() {
                     <div className={`flex items-center gap-2 mb-2 justify-start md:justify-end font-medium ${
                       exp.color === 'orange' 
                         ? 'text-orange-600 dark:text-orange-400' 
+                        : exp.color === 'sanadtech'
+                        ? 'text-[#ff6633]'
                         : 'text-blue-600 dark:text-blue-400'
                     }`}>
                       <Briefcase className="w-4 h-4" />
@@ -101,9 +122,11 @@ export function WorkTimeline() {
                 </div>
 
                 {/* Center Icon */}
-                <div className={`hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-white dark:bg-neutral-900 border-4 items-center justify-center text-2xl z-10 ${
+                <div className={`hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 size-12 rounded-full bg-white dark:bg-neutral-900 border-4 items-center justify-center text-2xl z-10 ${
                   exp.color === 'orange' 
                     ? 'border-orange-500' 
+                    : exp.color === 'sanadtech'
+                    ? 'border-[#ff6633]'
                     : exp.color === 'blue' 
                     ? 'border-blue-500' 
                     : 'border-purple-500'
@@ -120,7 +143,7 @@ export function WorkTimeline() {
 
         <div className="mt-12 text-center">
           <Link
-            href="/experience"
+            href={`/${locale}/experience`}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors duration-300"
           >
             {t('viewFull')}

@@ -12,12 +12,14 @@ interface TimelineProps {
   data: TimelineEntry[]
   headerTitle?: string
   headerDescription?: string
+  headerCaption?: string
 }
 
 export const Timeline = ({ 
   data, 
-  headerTitle = "Mon Parcours en Data Science & IA",
-  headerDescription = "Passionné par l'intelligence artificielle et la science des données, j'ai commencé mon parcours en 2022 avec un stage en génie logiciel. Depuis, j'ai développé mes compétences en développement mobile et me suis spécialisé en Data Science avec Orange Maroc où j'ai remporté la 3ème place au Orange Summer Challenge 2025."
+  headerTitle,
+  headerDescription,
+  headerCaption,
 }: TimelineProps) => {
   const ref = useRef<HTMLDivElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
@@ -38,11 +40,12 @@ export const Timeline = ({
     updateHeight()
 
     // Set up resize observer to handle window resizing
+    const timelineElement = ref.current
     const resizeObserver = new ResizeObserver(updateHeight)
-    resizeObserver.observe(ref.current)
+    resizeObserver.observe(timelineElement)
 
     return () => {
-      if (ref.current) resizeObserver.unobserve(ref.current)
+      resizeObserver.unobserve(timelineElement)
     }
   }, [])
 
@@ -58,12 +61,22 @@ export const Timeline = ({
   return (
     <div className="w-full md:px-10" ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl font-bold">
-          {headerTitle}
-        </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-3xl italic">
-          {headerDescription} <br /> Voici la chronologie de mon parcours.
-        </p>
+        {headerTitle && (
+          <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl font-bold">
+            {headerTitle}
+          </h2>
+        )}
+        {headerDescription && (
+          <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-3xl italic">
+            {headerDescription}
+            {headerCaption && (
+              <>
+                <br />
+                {headerCaption}
+              </>
+            )}
+          </p>
+        )}
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

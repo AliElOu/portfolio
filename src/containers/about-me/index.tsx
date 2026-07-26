@@ -7,19 +7,13 @@ import { Badge } from "@/components/ui/badge"
 import { GlowingEffect } from "@/components/ui/glowing-effect"
 import { MY_NETWORKS } from "@/data/my-networks"
 import { useTheme } from "next-themes"
-import { MyResume } from "../my-resume"
 import { Bot, Database, Brain, Rocket } from "lucide-react"
 
 export function MyInformation() {
   return (
     <>
       <div className="flex flex-col gap-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
-          {/* Resume Card - Simple & Clean */}
-          <div className="dark:bg-black/50 bg-white/50 p-0">
-            <MyResume />
-          </div>
-
+        <div className="w-full">
           {/* Profile Card - Simplified */}
           <div className="relative h-full rounded-2xl border p-2 md:rounded-3xl md:p-3">
             <GlowingEffect

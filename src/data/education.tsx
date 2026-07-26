@@ -2,7 +2,7 @@ import { BlurImage } from "@/components/ui/apple-cards-carousel"
 
 export const EDUCATION_TIMELINE = [
   {
-    title: "Septembre 2023 - Présent",
+    title: "Septembre 2023 - Juin 2026",
     content: (
       <div>
         <div className="mb-4">

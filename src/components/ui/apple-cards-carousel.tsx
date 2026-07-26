@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import React, {
+  useCallback,
   useEffect,
   useRef,
   useState,
@@ -29,8 +30,9 @@ type Card = {
   title: string
   category: string
   content?: React.ReactNode
-  techStack?: string[]
+  techStack?: readonly string[]
   link?: string
+  isPrivate?: boolean
 }
 
 export const CarouselContext = createContext<{
@@ -163,15 +165,22 @@ export const Card = ({
   index,
   layout = false,
   techStack,
+  privateLabel = "Private project",
 }: {
   card: Card
   index: number
   layout?: boolean
-  techStack?: string[]
+  techStack?: readonly string[]
+  privateLabel?: string
 }) => {
   const [open, setOpen] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
   const { onCardClose } = useContext(CarouselContext)
+
+  const handleClose = useCallback(() => {
+    setOpen(false)
+    onCardClose(index)
+  }, [index, onCardClose])
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -188,22 +197,18 @@ export const Card = ({
 
     window.addEventListener("keydown", onKeyDown)
     return () => window.removeEventListener("keydown", onKeyDown)
-  }, [open])
+  }, [handleClose, open])
 
-  useOutsideClick(containerRef as any, () => handleClose())
+  useOutsideClick(containerRef as any, handleClose)
 
   const handleOpen = () => {
     // If there's a GitHub link, open it in a new tab
     if (card.link) {
       window.open(card.link, '_blank', 'noopener,noreferrer')
+      return
     }
-    // Otherwise, could open modal (currently disabled)
-    // setOpen(true)
-  }
 
-  const handleClose = () => {
-    setOpen(false)
-    onCardClose(index)
+    setOpen(true)
   }
 
   return (
@@ -274,11 +279,24 @@ export const Card = ({
             {card.title}
           </motion.p>
         </div>
-        {/* GitHub Link Indicator */}
-        {card.link && (
+        {/* GitHub repository status */}
+        {(card.link || card.isPrivate) && (
           <div className="absolute z-40 top-3 right-3 md:top-8 md:right-8">
-            <div className="bg-white/20 backdrop-blur-sm rounded-full p-2 md:p-3 border border-white/30 hover:bg-white/30 transition-all duration-300">
+            <div
+              className={cn(
+                "bg-black/45 text-white backdrop-blur-sm border border-white/30 transition-all duration-300 flex items-center",
+                card.isPrivate
+                  ? "rounded-full gap-1.5 px-2.5 py-1.5 md:px-3 md:py-2"
+                  : "rounded-full p-2 md:p-3 hover:bg-white/30"
+              )}
+              aria-label={card.isPrivate ? privateLabel : undefined}
+            >
               <IconBrandGithub className="w-4 h-4 md:w-6 md:h-6 text-white" />
+              {card.isPrivate && (
+                <span className="text-[10px] md:text-xs font-semibold">
+                  {privateLabel}
+                </span>
+              )}
             </div>
           </div>
         )}

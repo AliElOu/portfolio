@@ -23,33 +23,35 @@ import {
   DrawerTrigger,
 } from "../ui/drawer"
 import { Separator } from "@radix-ui/react-dropdown-menu"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 
 const pathNameDisableHeaderScroll = [""]
 
 export const Header = () => {
   const t = useTranslations('nav')
+  const locale = useLocale()
+  const homeHref = `/${locale}`
   
   const links = [
     {
       title: t('all'),
-      href: "/",
+      href: homeHref,
     },
     {
       title: t('education'),
-      href: "/education",
+      href: `${homeHref}/education`,
     },
     {
       title: t('experience'),
-      href: "/experience",
+      href: `${homeHref}/experience`,
     },
     {
       title: t('projects'),
-      href: "/projects",
+      href: `${homeHref}/projects`,
     },
     {
       title: t('certificates'),
-      href: "/certificates",
+      href: `${homeHref}/certificates`,
     },
   ]
   const [isScrolled, setIsScrolled] = useState(false)
@@ -103,7 +105,7 @@ export const Header = () => {
               : "bg-transparent w-full xl:w-[70%]"
           )}
         >
-          <Link href="/" className="flex items-center gap-2 cursor-pointer">
+          <Link href={homeHref} className="flex items-center gap-2 cursor-pointer">
             <Image 
               src="/images/logo.png" 
               alt="Logo" 
@@ -148,13 +150,13 @@ export const Header = () => {
                   className="border size-10 rounded-xl p-2 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors duration-300 sm:hidden"
                 >
                   <IconMenu2 />
-                  <span className="sr-only">Menu</span>
+                  <span className="sr-only">{t('menu')}</span>
                 </Button>
               </DrawerTrigger>
               <DrawerContent className="min-h-dvh">
                 <DrawerHeader className="flex justify-between">
                   <DrawerTitle className="flex items-center gap-2">
-                    <Link href="/" className="flex items-center gap-2">
+                    <Link href={homeHref} className="flex items-center gap-2">
                       <Image 
                         src="/images/logo.png" 
                         alt="Logo" 

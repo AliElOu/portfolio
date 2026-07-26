@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import type { Metadata } from "next"
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales } from '@/i18n/request';
 
@@ -17,45 +17,62 @@ const exo2 = Exo_2({
   variable: "--font-exo2",
 })
 
-export const metadata: Metadata = {
-  title: "Ali El Ouankrimi - Data Scientist & AI Engineer",
-  description:
-    "Portfolio de Ali El Ouankrimi, ingénieur en Data Science, Big Data et IA. Découvrez mes projets en Machine Learning, Deep Learning et analyse de données.",
-  keywords: [
-    "Data Scientist",
-    "AI Engineer",
-    "Machine Learning Engineer",
-    "Ali El Ouankrimi Portfolio",
-    "Computer Vision",
-    "Deep Learning",
-    "Python",
-    "TensorFlow",
-    "Data Analysis",
-  ],
-  openGraph: {
-    title: "Ali El Ouankrimi - Data Scientist & AI Engineer",
-    description:
-      "Découvrez l'expertise d'Ali El Ouankrimi en Data Science, Machine Learning et Big Data. Consultez mes projets et compétences techniques.",
-    url: "https://www.alielouankrimi.me",
-    type: "website",
-    images: [
-      {
-        url: "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/open-graph-6fkPvt3jl60AhDWy2pPhfp3PKoZPrZ.png",
-        width: 1200,
-        height: 630,
-        alt: "Ali El Ouankrimi - Data Scientist & AI Engineer Portfolio",
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "seo" })
+  const url = `https://www.alielouankrimi.me/${locale}`
+  const title = t("title")
+  const description = t("description")
+
+  return {
+    title,
+    description,
+    keywords: [
+      "Data Scientist",
+      "AI Engineer",
+      "Machine Learning Engineer",
+      "Ali El Ouankrimi Portfolio",
+      "Computer Vision",
+      "Deep Learning",
+      "Python",
+      "TensorFlow",
+      "Data Analysis",
+    ],
+    alternates: {
+      canonical: url,
+      languages: {
+        en: "https://www.alielouankrimi.me/en",
+        fr: "https://www.alielouankrimi.me/fr",
       },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Ali El Ouankrimi - Data Scientist & AI Engineer",
-    description:
-      "Explorez les projets d'Ali El Ouankrimi en Data Science, Machine Learning et analyse de données.",
-    images: [
-      "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/open-graph-6fkPvt3jl60AhDWy2pPhfp3PKoZPrZ.png",
-    ],
-  },
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "website",
+      locale,
+      images: [
+        {
+          url: "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/open-graph-6fkPvt3jl60AhDWy2pPhfp3PKoZPrZ.png",
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [
+        "https://voocgavdbpy2gucg.public.blob.vercel-storage.com/open-graph-6fkPvt3jl60AhDWy2pPhfp3PKoZPrZ.png",
+      ],
+    },
+  }
 }
 
 export function generateStaticParams() {

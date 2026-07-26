@@ -5,10 +5,11 @@ import {
   TextAnimate,
 } from "@/components/magicui/text-animate"
 import { Cover } from "@/components/ui/cover"
-import { ROLE_TITLES } from "@/data/role-titles"
 import { cn } from "@/lib/utils"
 import { motion } from "framer-motion"
 import { Bot } from "lucide-react"
+import Image from "next/image"
+import { useTranslations } from "next-intl"
 import { memo, useEffect, useState } from "react"
 
 const animationTypes: AnimationVariant[] = [
@@ -25,19 +26,18 @@ const animationTypes: AnimationVariant[] = [
 ]
 
 export const MyUniverse = () => {
-  const [currentText, setCurrentText] = useState(ROLE_TITLES[0])
+  const t = useTranslations("home.hero")
+  const roleTitles = [
+    t("roles.dataScientist"),
+    t("roles.aiEngineer"),
+    t("roles.mlEngineer"),
+  ]
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0)
   const [currentAnimation, setCurrentAnimation] = useState(animationTypes[0])
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentText((prev) => {
-        const textIndex = ROLE_TITLES.indexOf(prev)
-        if (textIndex === ROLE_TITLES.length - 1) {
-          return ROLE_TITLES[0]
-        }
-
-        return ROLE_TITLES[textIndex + 1]
-      })
+      setCurrentRoleIndex((currentIndex) => (currentIndex + 1) % 3)
       setCurrentAnimation(
         animationTypes[Math.floor(Math.random() * animationTypes.length)]
       )
@@ -51,7 +51,7 @@ export const MyUniverse = () => {
         
         <div className="flex flex-col gap-4">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight dark:text-zinc-300 text-zinc-700">
-            Hello, I&apos;m
+            {t("greeting")}
           </h1>
 
           <Title />
@@ -75,17 +75,17 @@ export const MyUniverse = () => {
               startOnView={false}
               className="break-words"
             >
-              {currentText}
+              {roleTitles[currentRoleIndex]}
             </TextAnimate>
           </motion.div>
         </div>
         
-        <div className="text-lg text-zinc-600 dark:text-zinc-400 my-8 font-medium flex items-center gap-2">
+        <div className="text-lg text-zinc-600 dark:text-zinc-400 my-8 font-medium">
           <span className="font-semibold text-zinc-800 dark:text-zinc-300">
-            Transforming data into intelligent solutions
+            {t("taglineLead")}
           </span>
-          <br />
-          with Machine Learning, Deep Learning & AI technologies <Bot className="w-5 h-5 inline-block" />
+          <span> {t("taglineTail")}</span>{" "}
+          <Bot className="w-5 h-5 inline-block" aria-hidden="true" />
         </div>
       </div>
       
@@ -97,12 +97,16 @@ export const MyUniverse = () => {
 }
 
 export function CompareDemo() {
+  const t = useTranslations("home.hero")
+
   return (
     <div className="relative w-full max-w-md mx-auto">
       <div className="relative aspect-[3/4] w-full overflow-hidden rounded-3xl border-4 border-neutral-200 dark:border-neutral-800 shadow-2xl">
-        <img
+        <Image
           src="/images/portrait.png"
-          alt="Ali El Ouankrimi - Data Scientist & AI Engineer"
+          alt={t("portraitAlt")}
+          fill
+          sizes="(min-width: 1024px) 36rem, 28rem"
           className="w-full h-full object-cover"
         />
         {/* Badge overlay */}
@@ -112,7 +116,7 @@ export function CompareDemo() {
               Ali El Ouankrimi
             </p>
             <p className="text-xs text-neutral-600 dark:text-neutral-400 mt-1">
-              Data Scientist & AI Engineer
+              {t("portraitRole")}
             </p>
           </div>
         </div>

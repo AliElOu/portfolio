@@ -4,7 +4,9 @@
     "experience": "Experience",
     "education": "Education",
     "certificates": "Certificates",
-    "projects": "Projects"
+    "projects": "Projects",
+    "menu": "Menu",
+    "switchLanguage": "Switch language"
   },
   "home": {
     "hero": {
@@ -14,7 +16,11 @@
         "dataScientist": "Data Scientist",
         "aiEngineer": "AI Engineer",
         "mlEngineer": "ML Engineer"
-      }
+      },
+      "taglineLead": "Transforming data into intelligent solutions",
+      "taglineTail": "with Machine Learning, Deep Learning and AI technologies",
+      "portraitAlt": "Portrait of Ali El Ouankrimi",
+      "portraitRole": "Data Scientist & AI Engineer"
     },
     "keyAchievements": {
       "title": "Key Achievements",
@@ -38,18 +44,38 @@
     "featuredProjects": {
       "title": "Featured Projects",
       "subtitle": "Real-world AI solutions",
-      "viewAll": "View All Projects"
+      "viewAll": "View All Projects",
+      "items": {
+        "faceDetection": {
+          "title": "Cattle Face Detection System",
+          "description": "Deep-learning facial recognition and detection for livestock identification."
+        },
+        "measurements": {
+          "title": "Smart Cattle Measurements",
+          "description": "AI-powered body measurement analysis for health monitoring and growth tracking."
+        },
+        "salesForecasting": {
+          "title": "Sales Forecasting Platform",
+          "description": "Advanced time-series forecasting with ensemble machine-learning models."
+        }
+      }
     },
     "workExperience": {
       "title": "Work Experience",
       "subtitle": "Professional journey in tech",
       "viewFull": "View Full Experience",
       "experiences": {
+        "sanadtech": {
+          "role": "AI Engineer",
+          "company": "SanadTech",
+          "location": "Rabat, Morocco",
+          "achievement": "Built the Hiring LLM project"
+        },
         "orange": {
           "role": "Data Scientist",
           "company": "Orange Maroc",
           "location": "Morocco",
-          "achievement": "Winner of Orange Summer Challenge"
+          "achievement": "Built the BoviClouds project"
         },
         "teima": {
           "role": "Mobile Developer",
@@ -82,13 +108,49 @@
     }
   },
   "projects": {
+    "private": "Private project",
     "categories": {
+      "generativeAi": "Generative AI & Recruitment",
       "computerVision": "Computer Vision & Detection",
       "measurement": "Computer Vision & Measurement",
       "nlp": "NLP & Chatbot",
       "forecasting": "Forecasting & Analytics",
       "webScraping": "NLP & Web Scraping"
+    },
+    "items": {
+      "hiringLlm": {
+        "title": "Hiring LLM — Smart Candidate Screening Automation",
+        "description": "An LLM-powered talent acquisition SaaS platform that automates application intake, candidate enrichment, profile analysis, and recruiter workflows using autonomous research agents and secure AI pipelines."
+      },
+      "smartJobSeeker": {
+        "title": "Smart Job Seeker — AI-Powered CV Tailoring",
+        "description": "A Google Gemini-powered CV optimization application that automatically tailors CV content to job opportunities and generates targeted cover letters. It combines intelligent CV extraction with an API architecture for precise tailoring and efficient resource management."
+      },
+      "cattleFace": {
+        "title": "Cattle Face Detection System",
+        "description": "A YOLOv8-based detection and facial-recognition system for livestock, designed to identify animals automatically for herd monitoring and management."
+      },
+      "measurements": {
+        "title": "Smart Cattle Measurements Detection",
+        "description": "An intelligent measurement solution for livestock assessment that estimates weight and body dimensions automatically from images."
+      },
+      "forecasting": {
+        "title": "Inventory & Sales Forecasting Platform",
+        "description": "A Django inventory and sales platform with automated forecasting powered by an Airflow pipeline, LSTM models, and XGBoost."
+      },
+      "nlq": {
+        "title": "NLQ E-commerce — NLP Chatbot",
+        "description": "A natural-language e-commerce assistant that answers questions about products, prices, inventory, and orders, and recommends items from the database."
+      },
+      "sentiment": {
+        "title": "Amazon Sentiment Analysis",
+        "description": "A product-review analysis tool that extracts Amazon reviews from a URL and applies an ML/NLP model for sentiment analysis."
+      }
     }
+  },
+  "seo": {
+    "title": "Ali El Ouankrimi — Data Scientist & AI Engineer",
+    "description": "Portfolio of Ali El Ouankrimi, a Data Scientist and AI Engineer specializing in machine learning, deep learning, computer vision, and data analysis."
   },
   "common": {
     "year": "year",
@@ -96,9 +158,22 @@
   },
   "experience": {
     "pageTitle": "Experience | Ali El Ouankrimi",
-    "pageDescription": "Explore Ali El Ouankrimi's professional journey - Data Scientist with experience in Machine Learning, Deep Learning and Big Data.",
+    "pageDescription": "Explore Ali El Ouankrimi's professional journey in AI engineering, large language models, machine learning, deep learning, and big data.",
     "headerTitle": "My Journey in Data Science & AI",
-    "headerDescription": "Passionate about artificial intelligence and data science, I started my journey in 2022 with a software engineering internship. Since then, I have developed my skills in mobile development and specialized in Data Science with Orange Maroc where I won 3rd place at the Orange Summer Challenge 2025.",
+    "headerDescription": "Passionate about artificial intelligence and data science, I started my journey in 2022 with a software engineering internship. After specializing in Data Science at Orange Maroc, I completed a six-month AI Engineering internship at SanadTech, where I built the Hiring LLM project.",
+    "timelineIntro": "Here is the timeline of my professional journey.",
+    "sanadtech": {
+      "title": "Internship — AI Engineer",
+      "company": "SanadTech",
+      "location": "Rabat, Morocco",
+      "period": "February - July 2026",
+      "description": "Developed Hiring LLM, a SaaS platform that automates talent acquisition.",
+      "features": {
+        "platform": "Built an LLM SaaS platform that automates application collection, enrichment, and analysis (FastAPI, Google Gen AI SDK, Firebase, Next.js, GCP).",
+        "agentsAndSecurity": "Created autonomous research agents with Playwright and Firecrawl, and secured the platform against prompt injection, data leakage, and malicious résumés.",
+        "optimizationAndIntegrations": "Optimized inference cost and latency, then automated application intake through Inbox & Forms Linking."
+      }
+    },
     "odc": {
       "title": "Internship - Data Scientist",
       "company": "Orange Maroc",
@@ -142,11 +217,12 @@
     "pageDescription": "Discover Ali El Ouankrimi's academic journey - Engineer in Data Science, Big Data and AI.",
     "headerTitle": "My Academic Journey",
     "headerDescription": "Graduated in Data Science, Big Data and Artificial Intelligence from ENSIASD Taroudant, with a solid foundation in Computer Science acquired at EST Guelmim. An academic path focused on excellence and technological innovation.",
+    "timelineIntro": "Here is the timeline of my academic journey.",
     "ensiasd": {
       "title": "State Engineering Degree in Data Science, Big Data and AI",
       "school": "National School of Artificial Intelligence and Data Science (ENSIASD)",
       "location": "Taroudant, Morocco",
-      "period": "September 2023 - Present",
+      "period": "September 2023 - June 2026",
       "description": "Engineering training in Data Science, Big Data and Artificial Intelligence, covering theoretical and practical aspects of cutting-edge technologies.",
       "topics": {
         "ml": "Machine Learning & Deep Learning",

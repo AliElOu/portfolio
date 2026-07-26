@@ -2,6 +2,17 @@ import { BlurImage } from "@/components/ui/apple-cards-carousel"
 
 export const experiences = [
   {
+    title: 'Stage - AI Engineer',
+    company: 'SanadTech',
+    startDate: 'Février 2026',
+    endDate: 'Juillet 2026',
+    description: [
+      "Développement d'une plateforme SaaS LLM automatisant la collecte, l'enrichissement et l'analyse des candidatures (FastAPI, Google Gen AI SDK, Firebase, Next.js, GCP).",
+      "Création d'agents de recherche autonomes avec Playwright et Firecrawl, et sécurisation contre les injections de prompts, les fuites de données et les CV malveillants.",
+      "Optimisation des coûts et de la latence d'inférence, puis intégration des candidatures via Inbox & Forms Linking.",
+    ],
+  },
+  {
     title: 'Stage - Data Scientist',
     company: 'Orange Maroc',
     startDate: 'Juillet 2025',
@@ -9,7 +20,7 @@ export const experiences = [
     description: [
       "Conception d'une plateforme IA de suivi intelligent du bétail.",
       'Implémentation de la détection et du suivi en temps réel (YOLOv8 + ByteTrack).',
-      'Développement de la reconnaissance faciale bovine à partir du museau.',
+      'Développement de la retéléphconnaissance faciale bovine à partir du museau.',
       'Mesure morphologique automatique par détection de points clés.',
       'Projet primé 3ème place au concours Orange Summer Challenge 2025 (AWS, Meta, EY).',
     ],
@@ -37,6 +48,41 @@ export const experiences = [
 ];
 
 export const EXPERIENCE_TIMELINE = [
+  {
+    title: "Février - Juillet 2026",
+    content: (
+      <div>
+        <div className="mb-4">
+          <h3 className="text-xl md:text-2xl font-bold text-neutral-900 dark:text-neutral-100">
+            Stage - AI Engineer
+          </h3>
+          <p className="text-lg font-semibold text-neutral-700 dark:text-neutral-300">
+            SanadTech
+          </p>
+          <p className="text-sm text-neutral-600 dark:text-neutral-400">
+            📍 Rabat, Maroc
+          </p>
+        </div>
+
+        <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-base font-normal mb-6">
+          Développement de Hiring LLM, une plateforme SaaS qui automatise
+          l&apos;acquisition de talents.
+        </p>
+
+        <div className="mb-8 space-y-2">
+          <div className="flex gap-2 items-start text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
+            ✅ <span>Développement d&apos;une plateforme SaaS LLM automatisant la collecte, l&apos;enrichissement et l&apos;analyse des candidatures (FastAPI, Google Gen AI SDK, Firebase, Next.js, GCP).</span>
+          </div>
+          <div className="flex gap-2 items-start text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
+            ✅ <span>Création d&apos;agents de recherche autonomes avec Playwright et Firecrawl, et sécurisation contre les injections de prompts, les fuites de données et les CV malveillants.</span>
+          </div>
+          <div className="flex gap-2 items-start text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
+            ✅ <span>Optimisation des coûts et de la latence d&apos;inférence, puis intégration des candidatures via Inbox & Forms Linking.</span>
+          </div>
+        </div>
+      </div>
+    ),
+  },
   {
     title: "Juillet - Septembre 2025",
     content: (
@@ -179,7 +225,7 @@ export const EXPERIENCE_TIMELINE = [
         
         <div className="mb-8 space-y-2">
           <div className="flex gap-2 items-start text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
-            ✅ <span>Suivi d&apos;installation de contrôles d&apos;accès pour le projet des téléphériques</span>
+            ✅ <span>Suivi d&apos;installation de contrôles d&apos;accès pour le projet des téléphériques d&apos;Agadir</span>
           </div>
           <div className="flex gap-2 items-start text-neutral-700 dark:text-neutral-300 text-sm md:text-base">
             ✅ <span>Réalisation d&apos;une application desktop de gestion de stock</span>

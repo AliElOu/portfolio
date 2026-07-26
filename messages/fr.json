@@ -4,7 +4,9 @@
     "experience": "Expérience",
     "education": "Formation",
     "certificates": "Certifications",
-    "projects": "Projets"
+    "projects": "Projets",
+    "menu": "Menu",
+    "switchLanguage": "Changer de langue"
   },
   "home": {
     "hero": {
@@ -14,7 +16,11 @@
         "dataScientist": "Data Scientist",
         "aiEngineer": "Ingénieur IA",
         "mlEngineer": "Ingénieur ML"
-      }
+      },
+      "taglineLead": "Transformer les données en solutions intelligentes",
+      "taglineTail": "grâce au Machine Learning, au Deep Learning et aux technologies d'IA",
+      "portraitAlt": "Portrait d'Ali El Ouankrimi",
+      "portraitRole": "Data Scientist & Ingénieur IA"
     },
     "keyAchievements": {
       "title": "Réalisations Clés",
@@ -38,18 +44,38 @@
     "featuredProjects": {
       "title": "Projets Phares",
       "subtitle": "Solutions IA dans le monde réel",
-      "viewAll": "Voir tous les projets"
+      "viewAll": "Voir tous les projets",
+      "items": {
+        "faceDetection": {
+          "title": "Système de reconnaissance faciale bovine",
+          "description": "Reconnaissance et détection faciales par Deep Learning pour identifier le bétail."
+        },
+        "measurements": {
+          "title": "Mesures intelligentes du bétail",
+          "description": "Analyse des mensurations par IA pour suivre la santé et la croissance du bétail."
+        },
+        "salesForecasting": {
+          "title": "Plateforme de prévision des ventes",
+          "description": "Prévision avancée de séries temporelles avec des modèles de Machine Learning ensemblistes."
+        }
+      }
     },
     "workExperience": {
       "title": "Expérience Professionnelle",
       "subtitle": "Parcours professionnel dans la tech",
       "viewFull": "Voir toute l'expérience",
       "experiences": {
+        "sanadtech": {
+          "role": "Ingénieur IA",
+          "company": "SanadTech",
+          "location": "Rabat, Maroc",
+          "achievement": "Développement du projet Hiring LLM"
+        },
         "orange": {
           "role": "Data Scientist",
           "company": "Orange Maroc",
           "location": "Maroc",
-          "achievement": "Lauréat de l'Orange Summer Challenge"
+          "achievement": "Développement du projet BoviClouds"
         },
         "teima": {
           "role": "Développeur Mobile",
@@ -82,13 +108,49 @@
     }
   },
   "projects": {
+    "private": "Projet privé",
     "categories": {
+      "generativeAi": "IA Générative & Recrutement",
       "computerVision": "Vision par Ordinateur & Détection",
       "measurement": "Vision par Ordinateur & Mesure",
       "nlp": "NLP & Chatbot",
       "forecasting": "Prévision & Analytique",
       "webScraping": "NLP & Web Scraping"
+    },
+    "items": {
+      "hiringLlm": {
+        "title": "Hiring LLM — Automatisation intelligente de la présélection des candidats",
+        "description": "Une plateforme SaaS d'acquisition de talents basée sur les LLM, qui automatise la réception des candidatures, l'enrichissement des profils, leur analyse et les workflows des recruteurs grâce à des agents de recherche autonomes et des pipelines IA sécurisés."
+      },
+      "smartJobSeeker": {
+        "title": "Smart Job Seeker — Adaptation intelligente de CV par IA",
+        "description": "Application d'optimisation de CV basée sur Google Gemini, capable d'adapter automatiquement le contenu aux offres d'emploi et de générer des lettres de motivation ciblées. Elle intègre une architecture d'extraction intelligente de CV et une API assurant une adaptation précise et une gestion optimisée des ressources."
+      },
+      "cattleFace": {
+        "title": "Système de reconnaissance faciale bovine",
+        "description": "Un système de détection et de reconnaissance faciale du bétail basé sur YOLOv8, conçu pour identifier automatiquement les animaux et faciliter la gestion du troupeau."
+      },
+      "measurements": {
+        "title": "Détection intelligente des mensurations bovines",
+        "description": "Une solution de mesure intelligente qui estime automatiquement le poids et les dimensions corporelles du bétail à partir d'images."
+      },
+      "forecasting": {
+        "title": "Plateforme de gestion et de prévision des ventes",
+        "description": "Une plateforme Django de gestion des stocks et des ventes avec prévision automatisée grâce à un pipeline Airflow et aux modèles LSTM et XGBoost."
+      },
+      "nlq": {
+        "title": "NLQ E-commerce — Chatbot NLP",
+        "description": "Un assistant e-commerce en langage naturel qui répond aux questions sur les produits, les prix, les stocks et les commandes, puis recommande des articles depuis la base de données."
+      },
+      "sentiment": {
+        "title": "Analyse de sentiment Amazon",
+        "description": "Un outil qui extrait les avis Amazon depuis une URL et applique un modèle de ML/NLP afin d'en analyser le sentiment."
+      }
     }
+  },
+  "seo": {
+    "title": "Ali El Ouankrimi — Data Scientist & Ingénieur IA",
+    "description": "Portfolio d'Ali El Ouankrimi, Data Scientist et ingénieur IA spécialisé en Machine Learning, Deep Learning, vision par ordinateur et analyse de données."
   },
   "common": {
     "year": "année",
@@ -96,9 +158,22 @@
   },
   "experience": {
     "pageTitle": "Expérience | Ali El Ouankrimi",
-    "pageDescription": "Explorez le parcours professionnel d'Ali El Ouankrimi - Data Scientist avec expérience en Machine Learning, Deep Learning et Big Data.",
+    "pageDescription": "Découvrez le parcours professionnel d'Ali El Ouankrimi en ingénierie IA, grands modèles de langage, Machine Learning, Deep Learning et Big Data.",
     "headerTitle": "Mon Parcours en Data Science & IA",
-    "headerDescription": "Passionné par l'intelligence artificielle et la science des données, j'ai commencé mon parcours en 2022 avec un stage en génie logiciel. Depuis, j'ai développé mes compétences en développement mobile et me suis spécialisé en Data Science avec Orange Maroc où j'ai remporté la 3ème place au Orange Summer Challenge 2025.",
+    "headerDescription": "Passionné par l'intelligence artificielle et la science des données, j'ai commencé mon parcours en 2022 avec un stage en génie logiciel. Après une spécialisation en Data Science chez Orange Maroc, j'ai effectué un stage de six mois en ingénierie IA chez SanadTech, où j'ai développé le projet Hiring LLM.",
+    "timelineIntro": "Voici la chronologie de mon parcours professionnel.",
+    "sanadtech": {
+      "title": "Stage — AI Engineer",
+      "company": "SanadTech",
+      "location": "Rabat, Maroc",
+      "period": "Février - Juillet 2026",
+      "description": "Développement de Hiring LLM, une plateforme SaaS qui automatise l'acquisition de talents.",
+      "features": {
+        "platform": "Développement d'une plateforme SaaS LLM automatisant la collecte, l'enrichissement et l'analyse des candidatures (FastAPI, Google Gen AI SDK, Firebase, Next.js, GCP).",
+        "agentsAndSecurity": "Création d'agents de recherche autonomes avec Playwright et Firecrawl, et sécurisation contre les injections de prompts, les fuites de données et les CV malveillants.",
+        "optimizationAndIntegrations": "Optimisation des coûts et de la latence d'inférence, puis intégration des candidatures via Inbox & Forms Linking."
+      }
+    },
     "odc": {
       "title": "Stage - Data Scientist",
       "company": "Orange Maroc",
@@ -142,11 +217,12 @@
     "pageDescription": "Découvrez le parcours académique d'Ali El Ouankrimi - Ingénieur en Data Science, Big Data et IA.",
     "headerTitle": "Mon Parcours Académique",
     "headerDescription": "Diplômé en Data Science, Big Data et Intelligence Artificielle de l'ENSIASD Taroudant, avec une base solide en Informatique acquise à l'EST Guelmim. Un parcours académique axé sur l'excellence et l'innovation technologique.",
+    "timelineIntro": "Voici la chronologie de mon parcours académique.",
     "ensiasd": {
       "title": "Diplôme d'ingénieur d'état en Data Science, Big Data et IA",
       "school": "École Nationale Supérieure de l'Intelligence Artificielle et Sciences des Données (ENSIASD)",
       "location": "Taroudant, Maroc",
-      "period": "Septembre 2023 - Présent",
+      "period": "Septembre 2023 - Juin 2026",
       "description": "Formation d'ingénieurie en Data Science, Big Data et Intelligence Artificielle, couvrant les aspects théoriques et pratiques des technologies de pointe.",
       "topics": {
         "ml": "Machine Learning & Deep Learning",

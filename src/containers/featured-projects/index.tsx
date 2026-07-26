@@ -5,31 +5,33 @@ import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 
 export function FeaturedProjects() {
   const t = useTranslations('home.featuredProjects')
+  const locale = useLocale()
+  const projectsHref = `/${locale}/projects`
   const projects = [
     {
-      title: "Face Detection System",
-      description: "Advanced facial recognition and detection using deep learning for livestock identification",
+      title: t("items.faceDetection.title"),
+      description: t("items.faceDetection.description"),
       image: "/images/projects/face-detection.jpg",
       tags: ["YOLOv8", "Face Recognition", "Deep Learning"],
-      href: "/projects"
+      href: projectsHref
     },
     {
-      title: "Smart Measurements Detection",
-      description: "AI-powered body measurements analysis for health monitoring and growth tracking",
+      title: t("items.measurements.title"),
+      description: t("items.measurements.description"),
       image: "/images/projects/smart-measurements.jpg",
       tags: ["Computer Vision", "Measurement AI", "Analytics"],
-      href: "/projects"
+      href: projectsHref
     },
     {
-      title: "Sales Forecasting",
-      description: "Advanced time series prediction with ensemble ML models",
+      title: t("items.salesForecasting.title"),
+      description: t("items.salesForecasting.description"),
       image: "/images/projects/sales-forecast.jpg",
       tags: ["LSTM", "XGBoost", "Time Series"],
-      href: "/projects"
+      href: projectsHref
     }
   ]
 
@@ -46,7 +48,7 @@ export function FeaturedProjects() {
             </p>
           </div>
           <Link 
-            href="/projects"
+            href={projectsHref}
             className="hidden md:flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:gap-3 transition-all duration-300 font-medium"
           >
             {t('viewAll')}
@@ -106,10 +108,10 @@ export function FeaturedProjects() {
 
         <div className="mt-8 text-center md:hidden">
           <Link 
-            href="/projects"
+            href={projectsHref}
             className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:gap-3 transition-all duration-300 font-medium"
           >
-            View All Projects
+            {t("viewAll")}
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
