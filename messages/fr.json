@@ -50,9 +50,9 @@
           "title": "Système de reconnaissance faciale bovine",
           "description": "Reconnaissance et détection faciales par Deep Learning pour identifier le bétail."
         },
-        "measurements": {
-          "title": "Mesures intelligentes du bétail",
-          "description": "Analyse des mensurations par IA pour suivre la santé et la croissance du bétail."
+        "hiringLlm": {
+          "title": "Hiring LLM — Présélection de candidats",
+          "description": "Plateforme SaaS d'IA générative orientée production automatisant le recrutement, l'extraction de CV et les agents web."
         },
         "salesForecasting": {
           "title": "Plateforme de prévision des ventes",

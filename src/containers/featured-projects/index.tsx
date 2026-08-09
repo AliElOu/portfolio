@@ -20,10 +20,10 @@ export function FeaturedProjects() {
       href: projectsHref
     },
     {
-      title: t("items.measurements.title"),
-      description: t("items.measurements.description"),
-      image: "/images/projects/smart-measurements.jpg",
-      tags: ["Computer Vision", "Measurement AI", "Analytics"],
+      title: t("items.hiringLlm.title"),
+      description: t("items.hiringLlm.description"),
+      image: "/images/projects/hiring-llm.png",
+      tags: ["Generative AI", "FastAPI", "Next.js"],
       href: projectsHref
     },
     {

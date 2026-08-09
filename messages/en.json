@@ -50,9 +50,9 @@
           "title": "Cattle Face Detection System",
           "description": "Deep-learning facial recognition and detection for livestock identification."
         },
-        "measurements": {
-          "title": "Smart Cattle Measurements",
-          "description": "AI-powered body measurement analysis for health monitoring and growth tracking."
+        "hiringLlm": {
+          "title": "Hiring LLM — Candidate Screening",
+          "description": "Production-oriented GenAI SaaS automating talent acquisition, CV extraction, web research agents, and security."
         },
         "salesForecasting": {
           "title": "Sales Forecasting Platform",
